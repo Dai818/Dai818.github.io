@@ -9,7 +9,7 @@ const news = [
       <><a href="https://arxiv.org/abs/2607.04438">ResearchStudio-Reel</a> and <a href="https://arxiv.org/abs/2607.04439">ResearchStudio-Idea</a> released.</>,
       <><a href="https://arxiv.org/abs/2606.20515">S-Agent</a> and <a href="https://arxiv.org/abs/2605.27367">SpatialBench</a> released.</>,
       <>One paper was accepted to <strong>ACL 2026</strong> Main Conference: <a href="https://aclanthology.org/2026.acl-long.1262/">Data Organization</a>.</>,
-      <>One paper was accepted to <strong>CVPR 2026</strong>: <a href="https://arxiv.org/abs/2511.10560">OmniVGGT</a> (<strong>Highlight</strong>).</>,
+      <>One paper was accepted to <strong>CVPR 2026</strong>: <a href="https://arxiv.org/abs/2511.10560">OmniVGGT</a> (<strong className="award">Highlight</strong>).</>,
       <>One paper was accepted to <strong>ICLR 2026</strong>: <a href="https://arxiv.org/abs/2510.17439">From Spatial to Actions</a>.</>,
       <>One paper was accepted to IJCV: <a href="https://doi.org/10.1007/s11263-025-02627-9">CoSurfGS</a>.</>,
       <>One paper was accepted to IEEE TSC: <a href="https://doi.org/10.1109/TSC.2026.3671739">Radiant</a>.</>,
@@ -24,8 +24,8 @@ const news = [
   {
     year: "2024",
     items: [
-      <>Two papers were accepted to <strong>CVPR 2024</strong>: <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Zhao_LTGC_Long-tail_Recognition_via_Leveraging_LLMs-driven_Generated_Content_CVPR_2024_paper.pdf">LTGC</a> (<strong>Oral</strong>) and <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Li_GP-NeRF_Generalized_Perception_NeRF_for_Context-Aware_3D_Scene_Understanding_CVPR_2024_paper.pdf">GP-NeRF</a> (<strong>Highlight</strong>).</>,
-      <>Two papers were accepted to <strong>ECCV 2024</strong>: <a href="https://arxiv.org/abs/2407.12568">LTRL</a> (<strong>Oral</strong>) and <a href="https://arxiv.org/abs/2403.10147">GGRt</a>.</>,
+      <>Two papers were accepted to <strong>CVPR 2024</strong>: <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Zhao_LTGC_Long-tail_Recognition_via_Leveraging_LLMs-driven_Generated_Content_CVPR_2024_paper.pdf">LTGC</a> (<strong className="award">Oral</strong>) and <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Li_GP-NeRF_Generalized_Perception_NeRF_for_Context-Aware_3D_Scene_Understanding_CVPR_2024_paper.pdf">GP-NeRF</a> (<strong className="award">Highlight</strong>).</>,
+      <>Two papers were accepted to <strong>ECCV 2024</strong>: <a href="https://arxiv.org/abs/2407.12568">LTRL</a> (<strong className="award">Oral</strong>) and <a href="https://arxiv.org/abs/2403.10147">GGRt</a>.</>,
       <>One paper was accepted to IEEE TGRS: <a href="https://doi.org/10.1109/TGRS.2024.3373442">SPGC</a>.</>,
     ],
   },
@@ -43,58 +43,51 @@ const publicationGroups = [
     papers: [
       {
         title: "S-Agent: Spatial Tool-Use Elicits Reasoning for Spatial Intelligence",
-        image: "/publications/s-agent.webp",
-        authors: <><strong>Yalun Dai</strong>*, Hao Li*, Shulin Tian, Runmao Yao, Yuhao Dong, Fangzhou Hong, Zhaoxi Chen, Fangfu Liu, Baoliang Tian, Dingwen Zhang, Tao Wang, Kim-Hui Yap, Ziwei Liu</>,
+        image: "/publications/s-agent.jpg",
+        authors: <><strong>Yalun Dai</strong>, Hao Li, Shulin Tian, Runmao Yao, Yuhao Dong, Fangzhou Hong, Zhaoxi Chen, Fangfu Liu, Baoliang Tian, Dingwen Zhang, Tao Wang, Kim-Hui Yap, Ziwei Liu</>,
         venue: "arXiv, 2026",
         links: [["Project", "https://ropedia.github.io/S-Agent/"], ["Paper", "https://arxiv.org/abs/2606.20515"]],
       },
       {
         title: "SpatialBench: Is Your Spatial Foundation Model an All-Round Player?",
-        image: "/publications/spatialbench.webp",
+        image: "/publications/spatialbench.jpg",
         authors: <>Haosong Peng, Hao Li, Jiaqi Chen, Yuhao Pan, Runmao Yao, <strong>Yalun Dai</strong>, Fushuo Huo, Fangzhou Hong, Zhaoxi Chen, Haozhao Wang, Dingwen Zhang, Ziwei Liu, Wenchao Xu</>,
         venue: "arXiv, 2026",
         links: [["Paper", "https://arxiv.org/abs/2605.27367"]],
       },
       {
         title: "OmniVGGT: Omni-Modality Driven Visual Geometry Grounded Transformer",
-        image: "/publications/omnivggt.webp",
+        image: "/publications/omnivggt.jpg",
         authors: <>Haosong Peng, Hao Li, <strong>Yalun Dai</strong>, Yushi Lan, Yihang Luo, Tianyu Qi, Zhengshen Zhang, Yufeng Zhan, Junfei Zhang, Wenchao Xu, Ziwei Liu</>,
-        venue: <><strong>CVPR 2026</strong>, Highlight</>,
+        venue: <><strong>CVPR 2026</strong>, <strong className="award">Highlight</strong></>,
         links: [["Paper", "https://arxiv.org/abs/2511.10560"]],
       },
       {
         title: "From Spatial to Actions: Grounding Vision-Language-Action Model in Spatial Foundation Priors",
         image: "/publications/spatial-to-actions.webp",
-        authors: <>Zhengshen Zhang*, Hao Li*, <strong>Yalun Dai</strong>, Zhengbang Zhu, Lei Zhou, Chenchen Liu, Dong Wang, Francis E. H. Tay, Sijin Chen, Ziwei Liu, et al.</>,
+        authors: <>Zhengshen Zhang*, Hao Li*, <strong>Yalun Dai</strong>, Zhengbang Zhu, Lei Zhou, Chenchen Liu, Dong Wang, Francis E. H. Tay, Sijin Chen, Ziwei Liu</>,
         venue: <strong>ICLR 2026</strong>,
         links: [["Paper", "https://arxiv.org/abs/2510.17439"], ["Project", "https://falcon-vla.github.io/"]],
       },
       {
         title: "CoSurfGS: Collaborative 3D Surface Gaussian Splatting with Distributed Learning for Large Scene Reconstruction",
-        image: "/publications/cosurfgs.webp",
+        image: "/publications/cosurfgs.jpg",
         authors: <>Yuanyuan Gao*, <strong>Yalun Dai</strong>*, Hao Li*, Weicai Ye, Jiaqi Chen, Dingwen Zhang, Tong He, Guofeng Zhang, Junwei Han</>,
         venue: "International Journal of Computer Vision, 2026",
         links: [["Paper", "https://arxiv.org/abs/2412.17612"]],
       },
       {
-        title: "Radiant: Large-scale 3D Gaussian Rendering based on Hierarchical Framework",
-        image: "/publications/radiant.webp",
-        authors: <>Haosong Peng, Tianyu Qi, Yufeng Zhan, Hao Li, <strong>Yalun Dai</strong>, Yuanqing Xia</>,
-        venue: "IEEE Transactions on Services Computing, 2026",
-        links: [["Paper", "https://arxiv.org/abs/2412.05546"]],
-      },
-      {
         title: "GGRt: Towards Pose-free Generalizable 3D Gaussian Splatting in Real-time",
-        image: "/publications/ggrt.webp",
+        image: "/publications/ggrt.jpg",
         authors: <>Hao Li, Yuanyuan Gao, Chenming Wu, Dingwen Zhang, <strong>Yalun Dai</strong>, Chen Zhao, Haocheng Feng, Errui Ding, Jingdong Wang, Junwei Han</>,
         venue: <strong>ECCV 2024</strong>,
         links: [["Paper", "https://arxiv.org/abs/2403.10147"]],
       },
       {
         title: "GP-NeRF: Generalized Perception NeRF for Context-Aware 3D Scene Understanding",
-        image: "/publications/gp-nerf.webp",
+        image: "/publications/gp-nerf.jpg",
         authors: <>Hao Li, Dingwen Zhang, <strong>Yalun Dai</strong>, Nian Liu, Lechao Cheng, Jingfeng Li, Jingdong Wang, Junwei Han</>,
-        venue: <><strong>CVPR 2024</strong>, Highlight</>,
+        venue: <><strong>CVPR 2024</strong>, <strong className="award">Highlight</strong></>,
         links: [["Paper", "https://arxiv.org/abs/2311.11863"]],
       },
     ],
@@ -104,59 +97,52 @@ const publicationGroups = [
     papers: [
       {
         title: "ResearchStudio-Reel: Automate the Last Mile of Research from Paper to Poster, Video, and Blog",
-        image: "/publications/researchstudio-reel.webp",
-        authors: <>Lingao Xiao, <strong>Yalun Dai</strong>, Yangyu Huang, Qihao Zhao, Wenshan Wu, Hugo He, Ruishuo Chen, Jin Jiang, Qianli Ma, Jiahuan Zhang, Xin Zhang, Ying Xin, Yang Ou, Yan Xia, Scarlett Li, Longbo Huang, Zhipeng Zhang, Yang He, Yap Kim Hui, Yan Lu</>,
+        image: "/publications/researchstudio-reel.jpg",
+        authors: <>Lingao Xiao*, <strong>Yalun Dai</strong>*, Yangyu Huang*, Qihao Zhao, Wenshan Wu, Hugo He, Ruishuo Chen, Jin Jiang, Qianli Ma, Jiahuan Zhang, Xin Zhang, Ying Xin, Yang Ou, Yan Xia, Scarlett Li, Longbo Huang, Zhipeng Zhang, Yang He, Kim-Hui Yap, Yan Lu</>,
         venue: "arXiv, 2026",
         links: [["Paper", "https://arxiv.org/abs/2607.04438"]],
       },
       {
         title: "ResearchStudio-Idea: An Evidence-Grounded Research-Ideation Skill Suite from ML Conference Outcomes",
-        image: "/publications/researchstudio-idea.webp",
-        authors: <>Qihao Zhao, Yangyu Huang, <strong>Yalun Dai</strong>, Lingao Xiao, Jianjun Gao, Xin Zhang, Wenshan Wu, Scarlett Li, Yang He, Yan Lu, Yap Kim Hui</>,
+        image: "/publications/researchstudio-idea.jpg",
+        authors: <>Qihao Zhao, Yangyu Huang, <strong>Yalun Dai</strong>, Lingao Xiao, Jianjun Gao, Xin Zhang, Wenshan Wu, Scarlett Li, Yang He, Yan Lu, Kim-Hui Yap</>,
         venue: "arXiv, 2026",
         links: [["Paper", "https://arxiv.org/abs/2607.04439"]],
       },
       {
         title: "Demystifying Data Organization for Enhanced LLM Training",
-        image: "/publications/data-organization.webp",
+        image: "/publications/data-organization.jpg",
         authors: <><strong>Yalun Dai</strong>, Yangyu Huang, Tongshen Yang, Yonghan Wang, Xin Zhang, Wenshan Wu, Qihao Zhao, Hao Li, Yuanyuan Gao, Kim-Hui Yap, Scarlett Li</>,
         venue: <><strong>ACL 2026</strong>, Main Conference</>,
         links: [["Paper", "https://arxiv.org/abs/2605.30334"], ["Code", "https://github.com/microsoft/data-efficacy"]],
       },
       {
         title: "Data Efficacy for Language Model Training",
-        image: "/publications/data-efficacy.webp",
+        image: "/publications/data-efficacy.jpg",
         authors: <><strong>Yalun Dai</strong>, Yangyu Huang, Xin Zhang, Wenshan Wu, Chong Li, Wenhui Lu, Shijie Cao, Li Dong, Scarlett Li</>,
         venue: "arXiv, 2025",
         links: [["Paper", "https://arxiv.org/abs/2506.21545"], ["Code", "https://github.com/microsoft/data-efficacy"]],
       },
       {
         title: "Training-Free Dataset Pruning for Instance Segmentation",
-        image: "/publications/tfdp.webp",
+        image: "/publications/tfdp.jpg",
         authors: <><strong>Yalun Dai</strong>, Lingao Xiao, Ivor W. Tsang, Yang He</>,
         venue: <strong>ICLR 2025</strong>,
         links: [["Paper", "https://proceedings.iclr.cc/paper_files/paper/2025/hash/4a5a9f5c15632e9f52c9c1ba4134f13c-Abstract-Conference.html"]],
       },
       {
         title: "LTRL: Boosting Long-tail Recognition via Reflective Learning",
-        image: "/publications/ltrl.webp",
-        authors: <>Qihao Zhao, <strong>Yalun Dai</strong>, Shen Lin, Wei Hu, Fan Zhang, Jun Liu</>,
-        venue: <><strong>ECCV 2024</strong>, Oral</>,
+        image: "/publications/ltrl.jpg",
+        authors: <>Qihao Zhao*, <strong>Yalun Dai</strong>*, Shen Lin, Wei Hu, Fan Zhang, Jun Liu</>,
+        venue: <><strong>ECCV 2024</strong>, <strong className="award">Oral</strong></>,
         links: [["Paper", "https://arxiv.org/abs/2407.12568"]],
       },
       {
         title: "LTGC: Long-tail Recognition via Leveraging LLMs-driven Generated Content",
-        image: "/publications/ltgc.webp",
-        authors: <>Qihao Zhao, <strong>Yalun Dai</strong>, Hao Li, Wei Hu, Fan Zhang, Jun Liu</>,
-        venue: <><strong>CVPR 2024</strong>, Oral</>,
+        image: "/publications/ltgc.jpg",
+        authors: <>Qihao Zhao*, <strong>Yalun Dai</strong>*, Hao Li, Wei Hu, Fan Zhang, Jun Liu</>,
+        venue: <><strong>CVPR 2024</strong>, <strong className="award">Oral</strong></>,
         links: [["Paper", "https://arxiv.org/abs/2403.05854"]],
-      },
-      {
-        title: "SPGC: Shape-Prior-Based Generated Content Data Augmentation for Remote Sensing Object Detection",
-        image: "/publications/spgc.webp",
-        authors: <><strong>Yalun Dai</strong>, Fei Ma, Wei Hu, Fan Zhang</>,
-        venue: "IEEE Transactions on Geoscience and Remote Sensing, 2024",
-        links: [["Paper", "https://doi.org/10.1109/TGRS.2024.3373442"]],
       },
       {
         title: "Boosting Low-Data Instance Segmentation by Unsupervised Pre-training with Saliency Prompt",
@@ -170,22 +156,20 @@ const publicationGroups = [
 ];
 
 const publicationOrder = [
-  "ResearchStudio-Reel: Automate the Last Mile of Research from Paper to Poster, Video, and Blog",
-  "ResearchStudio-Idea: An Evidence-Grounded Research-Ideation Skill Suite from ML Conference Outcomes",
   "S-Agent: Spatial Tool-Use Elicits Reasoning for Spatial Intelligence",
   "Demystifying Data Organization for Enhanced LLM Training",
+  "ResearchStudio-Reel: Automate the Last Mile of Research from Paper to Poster, Video, and Blog",
+  "CoSurfGS: Collaborative 3D Surface Gaussian Splatting with Distributed Learning for Large Scene Reconstruction",
+  "ResearchStudio-Idea: An Evidence-Grounded Research-Ideation Skill Suite from ML Conference Outcomes",
   "SpatialBench: Is Your Spatial Foundation Model an All-Round Player?",
   "OmniVGGT: Omni-Modality Driven Visual Geometry Grounded Transformer",
   "From Spatial to Actions: Grounding Vision-Language-Action Model in Spatial Foundation Priors",
-  "CoSurfGS: Collaborative 3D Surface Gaussian Splatting with Distributed Learning for Large Scene Reconstruction",
-  "Radiant: Large-scale 3D Gaussian Rendering based on Hierarchical Framework",
   "Data Efficacy for Language Model Training",
   "Training-Free Dataset Pruning for Instance Segmentation",
   "LTRL: Boosting Long-tail Recognition via Reflective Learning",
-  "GGRt: Towards Pose-free Generalizable 3D Gaussian Splatting in Real-time",
   "LTGC: Long-tail Recognition via Leveraging LLMs-driven Generated Content",
+  "GGRt: Towards Pose-free Generalizable 3D Gaussian Splatting in Real-time",
   "GP-NeRF: Generalized Perception NeRF for Context-Aware 3D Scene Understanding",
-  "SPGC: Shape-Prior-Based Generated Content Data Augmentation for Remote Sensing Object Detection",
   "Boosting Low-Data Instance Segmentation by Unsupervised Pre-training with Saliency Prompt",
 ];
 
@@ -209,7 +193,7 @@ export default function Home() {
             <div className="about-copy">
               <h1>Yalun Dai</h1>
               <p>
-                I am a second-year PhD student at Nanyang Technological University (NTU Research Scholarship), supervised by <a href="https://www.ntu.edu.sg/research/faculty-directory/detail/Yap-Kim-Hui" target="_blank" rel="noreferrer">Prof. Yap Kim-Hui</a>.
+                I am a second-year PhD student at Nanyang Technological University (NTU Research Scholarship), supervised by <a href="https://www.ntu.edu.sg/research/faculty-directory/detail/Yap-Kim-Hui" target="_blank" rel="noreferrer">Prof. Kim-Hui Yap</a>.
                 I also collaborate on several research projects with <a href="https://liuziwei7.github.io/" target="_blank" rel="noreferrer">Prof. Ziwei Liu</a>.
                 My research focuses on <strong>Data-centric AI</strong> and <strong>Embodied AI</strong>.
                 Previously, I interned at <strong>ByteDance</strong> and <strong>Microsoft Research</strong>.

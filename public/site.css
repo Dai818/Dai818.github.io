@@ -62,14 +62,16 @@ a:hover { text-decoration: underline; }
 .publication-filter button:hover { background: #ededed; }
 .publication-filter button.active { border-color: var(--link); background: var(--link); color: #fff; }
 .publication-filter button:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
-.publication { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 18px; align-items: start; margin-bottom: 21px; }
+.publication { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 20px; align-items: start; margin-bottom: 22px; }
+.publication[hidden] { display: none; }
 .publication-thumb {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  border: 1px solid #e2e2e2;
-  background: #fff;
+  border: 1px solid #e7e7e7;
+  border-radius: 2px;
+  background: #f7f7f7;
 }
 .publication-thumb img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .publication h4 { margin: 0 0 2px; font-size: 14px; line-height: 1.35; font-weight: 600; }
@@ -78,6 +80,7 @@ a:hover { text-decoration: underline; }
 .publication-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 3px 8px; }
 .venue { color: var(--muted); }
 .venue strong { color: var(--text); }
+.award, .venue .award { color: #c62828; font-weight: 700; }
 .paper-links { display: inline-flex; gap: 6px; }
 
 footer { padding-top: 11px; border-top: 1px solid var(--line); color: #888; font-size: 11px; }
