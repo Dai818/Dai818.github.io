@@ -112,47 +112,15 @@
         "GP-NeRF: Generalized Perception NeRF for Context-Aware 3D Scene Understanding",
         "Boosting Low-Data Instance Segmentation by Unsupervised Pre-training with Saliency Prompt"
       ];
-      const images = {
-        "ResearchStudio-Reel: Automate the Last Mile of Research from Paper to Poster, Video, and Blog": "researchstudio-reel.jpg",
-        "ResearchStudio-Idea: An Evidence-Grounded Research-Ideation Skill Suite from ML Conference Outcomes": "researchstudio-idea.jpg",
-        "S-Agent: Spatial Tool-Use Elicits Reasoning for Spatial Intelligence": "s-agent.jpg",
-        "Demystifying Data Organization for Enhanced LLM Training": "data-organization.jpg",
-        "SpatialBench: Is Your Spatial Foundation Model an All-Round Player?": "spatialbench.jpg",
-        "OmniVGGT: Omni-Modality Driven Visual Geometry Grounded Transformer": "omnivggt.jpg",
-        "From Spatial to Actions: Grounding Vision-Language-Action Model in Spatial Foundation Priors": "spatial-to-actions.webp",
-        "CoSurfGS: Collaborative 3D Surface Gaussian Splatting with Distributed Learning for Large Scene Reconstruction": "cosurfgs.jpg",
-        "Data Efficacy for Language Model Training": "data-efficacy.jpg",
-        "Training-Free Dataset Pruning for Instance Segmentation": "tfdp.jpg",
-        "LTRL: Boosting Long-tail Recognition via Reflective Learning": "ltrl.jpg",
-        "GGRt: Towards Pose-free Generalizable 3D Gaussian Splatting in Real-time": "ggrt.jpg",
-        "LTGC: Long-tail Recognition via Leveraging LLMs-driven Generated Content": "ltgc.jpg",
-        "GP-NeRF: Generalized Perception NeRF for Context-Aware 3D Scene Understanding": "gp-nerf.jpg",
-        "Boosting Low-Data Instance Segmentation by Unsupervised Pre-training with Saliency Prompt": "saliency-prompt.webp"
-      };
       const rank = new Map(order.map((title, index) => [title, index]));
       const papers = groups.flatMap((group) => [...group.querySelectorAll(".publication")].map((paper) => {
         const title = paper.querySelector("h4").textContent;
         paper.dataset.category = group.dataset.category;
 
-        const thumb = document.createElement("a");
-        thumb.className = "publication-thumb";
-        thumb.href = [...paper.querySelectorAll(".paper-links a")].find((link) => link.textContent === "[Paper]")?.href || paper.querySelector(".paper-links a").href;
-        thumb.target = "_blank";
-        thumb.rel = "noreferrer";
-        thumb.setAttribute("aria-label", `Open ${title}`);
-
-        const image = document.createElement("img");
-        image.src = `./public/publications/${images[title]}`;
-        image.alt = `${title} overview`;
-        image.width = 640;
-        image.height = 360;
-        image.loading = "lazy";
-        thumb.append(image);
-
         const details = document.createElement("div");
         details.className = "publication-details";
         details.append(...paper.childNodes);
-        paper.append(thumb, details);
+        paper.append(details);
         return paper;
       })).sort((a, b) => (rank.get(a.querySelector("h4").textContent) ?? 999) - (rank.get(b.querySelector("h4").textContent) ?? 999));
 
