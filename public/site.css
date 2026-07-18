@@ -11,25 +11,25 @@ body {
   background: #fff;
   color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 15px;
+  line-height: 1.55;
 }
 a { color: var(--link); text-decoration: none; }
 a:hover { text-decoration: underline; }
-.site-container { width: min(900px, calc(100% - 40px)); margin: 0 auto; padding: 46px 0 30px; }
-.page-section { margin-bottom: 52px; }
+.site-container { width: min(880px, calc(100% - 40px)); margin: 0 auto; padding: 42px 0 28px; }
+.page-section { margin-bottom: 46px; }
 .page-section h2 {
   margin: 0 0 24px;
   padding-bottom: 7px;
   border-bottom: 1px solid var(--line);
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
 }
 
-.about-grid { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 36px; align-items: start; }
+.about-grid { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 34px; align-items: start; }
 .photo-placeholder {
-  width: 190px;
-  height: 230px;
+  width: 180px;
+  height: 215px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,11 +38,9 @@ a:hover { text-decoration: underline; }
   color: #999;
   font-size: 13px;
 }
-.about-copy h1 { margin: -6px 0 2px; font-size: 31px; line-height: 1.25; font-weight: 600; }
-.position { margin: 0 0 18px !important; color: var(--muted); }
-.about-copy p { margin: 0 0 14px; }
+.about-copy h1 { margin: -5px 0 13px; font-size: 26px; line-height: 1.25; font-weight: 600; }
+.about-copy p { margin: 0 0 12px; }
 .about-copy strong { font-weight: 600; }
-.profile-links { display: flex; flex-wrap: wrap; gap: 7px 18px; margin-top: 19px; font-size: 14px; }
 
 .news-item { display: grid; grid-template-columns: 92px 1fr; gap: 15px; margin: 8px 0; }
 .news-item time { color: var(--muted); white-space: nowrap; }
@@ -50,7 +48,7 @@ a:hover { text-decoration: underline; }
 
 .publication-note { margin: -13px 0 26px; color: var(--muted); font-size: 13px; }
 .publication { margin-bottom: 25px; }
-.publication h3 { margin: 0 0 4px; font-size: 17px; line-height: 1.45; font-weight: 600; }
+.publication h3 { margin: 0 0 4px; font-size: 16px; line-height: 1.4; font-weight: 600; }
 .publication p { margin: 2px 0; font-size: 14px; line-height: 1.55; }
 .authors { color: #444; }
 .venue { color: var(--muted); font-style: italic; }
@@ -63,6 +61,6 @@ footer { padding-top: 18px; border-top: 1px solid var(--line); color: #888; font
   .page-section { margin-bottom: 44px; }
   .about-grid { grid-template-columns: 1fr; gap: 22px; }
   .photo-placeholder { width: 150px; height: 185px; }
-  .about-copy h1 { margin-top: 0; font-size: 28px; }
+  .about-copy h1 { margin-top: 0; font-size: 24px; }
   .news-item { grid-template-columns: 78px 1fr; gap: 10px; }
 }

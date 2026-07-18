@@ -1,10 +1,3 @@
-const profileLinks = [
-  ["Google Scholar", "https://scholar.google.com/citations?user=6XyNVowAAAAJ&hl=en"],
-  ["GitHub", "https://github.com/Dai818"],
-  ["DBLP", "https://dblp.org/pid/339/6426"],
-  ["ORCID", "https://orcid.org/0009-0001-4260-4385"],
-];
-
 const news = [
   { date: "Jun 2026", text: <>We released <a href="https://ropedia.github.io/S-Agent/">S-Agent</a>, a spatial tool-use agent for continuous multi-view and video reasoning.</> },
   { date: "May 2026", text: <><a href="https://arxiv.org/abs/2605.30334">Demystifying Data Organization for Enhanced LLM Training</a> was accepted to ACL 2026 Main Conference.</> },
@@ -79,16 +72,12 @@ export default function Home() {
             <div className="photo-placeholder" role="img" aria-label="Portrait placeholder"><span>Photo</span></div>
             <div className="about-copy">
               <h1>Yalun Dai</h1>
-              <p className="position">Second-year PhD Student, Nanyang Technological University</p>
               <p>
-                I am supported by the <strong>NTU Research Scholarship</strong> and supervised by <a href="https://www.ntu.edu.sg/research/faculty-directory/detail/Yap-Kim-Hui" target="_blank" rel="noreferrer">Prof. Yap Kim-Hui</a>.
+                I am a second-year PhD student at Nanyang Technological University (NTU), supported by the <strong>NTU Research Scholarship</strong> and supervised by <a href="https://www.ntu.edu.sg/research/faculty-directory/detail/Yap-Kim-Hui" target="_blank" rel="noreferrer">Prof. Yap Kim-Hui</a>.
                 I also collaborate on several research projects with <a href="https://liuziwei7.github.io/" target="_blank" rel="noreferrer">Prof. Ziwei Liu</a>.
               </p>
               <p>My research focuses on <strong>Data-centric AI</strong> and <strong>Embodied AI</strong>.</p>
               <p>Previously, I interned at <strong>ByteDance</strong> and <strong>Microsoft Research</strong>.</p>
-              <div className="profile-links">
-                {profileLinks.map(([label, href]) => <a key={label} href={href} target="_blank" rel="noreferrer">{label}</a>)}
-              </div>
             </div>
           </div>
         </section>
