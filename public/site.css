@@ -42,7 +42,7 @@ a:hover { text-decoration: underline; }
 .about-copy p { margin: 0 0 9px; }
 .about-copy strong { font-weight: 600; }
 
-.news-year { display: grid; grid-template-columns: 52px 1fr; gap: 12px; margin: 5px 0 9px; }
+.news-year { display: grid; grid-template-columns: 52px 1fr; gap: 12px; margin: 0; }
 .news-year time { color: var(--muted); white-space: nowrap; }
 .news-year-items p { margin: 0 0 3px; }
 

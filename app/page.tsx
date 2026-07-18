@@ -12,7 +12,7 @@ const news = [
   {
     year: "2025",
     items: [
-      <>One paper was accepted to ICLR 2025: <a href="https://openreview.net/forum?id=rvxWEbTtRY">Training-Free Dataset Pruning for Instance Segmentation</a> (TFDP).</>,
+      <>One paper was accepted to ICLR 2025: <a href="https://openreview.net/forum?id=rvxWEbTtRY">TFDP</a>.</>,
     ],
   },
   {
