@@ -54,8 +54,13 @@
 
       <section class="page-section" id="publications">
         <h2>Selected Publications (<a href="https://scholar.google.com/citations?user=6XyNVowAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>)</h2>
+        <div class="publication-filter" role="tablist" aria-label="Filter publications by research area">
+          <button type="button" role="tab" aria-selected="true" class="active" data-filter="All">All</button>
+          <button type="button" role="tab" aria-selected="false" data-filter="Embodied AI">Embodied AI</button>
+          <button type="button" role="tab" aria-selected="false" data-filter="Data-Centric AI">Data-Centric AI</button>
+        </div>
         <div class="publication-columns">
-          <div class="publication-group">
+          <div class="publication-group" data-category="Embodied AI">
             <h3>Embodied AI</h3>
             <div class="publication-list">
               <article class="publication"><h4>S-Agent: Spatial Tool-Use Elicits Reasoning for Spatial Intelligence</h4><p class="authors"><strong>Yalun Dai</strong>*, Hao Li*, Shulin Tian, Runmao Yao, Yuhao Dong, Fangzhou Hong, Zhaoxi Chen, Fangfu Liu, Baoliang Tian, Dingwen Zhang, Tao Wang, Kim-Hui Yap, Ziwei Liu</p><p class="publication-meta"><span class="venue">Technical Report, 2026</span><span class="paper-links"><a href="https://ropedia.github.io/S-Agent/">[Project]</a><a href="https://arxiv.org/abs/2606.20515">[Paper]</a></span></p></article>
@@ -68,7 +73,7 @@
               <article class="publication"><h4>GP-NeRF: Generalized Perception NeRF for Context-Aware 3D Scene Understanding</h4><p class="authors">Hao Li, Dingwen Zhang, <strong>Yalun Dai</strong>, Nian Liu, Lechao Cheng, Jingfeng Li, Jingdong Wang, Junwei Han</p><p class="publication-meta"><span class="venue">CVPR 2024, Highlight</span><span class="paper-links"><a href="https://arxiv.org/abs/2311.11863">[Paper]</a></span></p></article>
             </div>
           </div>
-          <div class="publication-group">
+          <div class="publication-group" data-category="Data-Centric AI">
             <h3>Data-Centric AI</h3>
             <div class="publication-list">
               <article class="publication"><h4>ResearchStudio-Reel: Automate the Last Mile of Research from Paper to Poster, Video, and Blog</h4><p class="authors">Lingao Xiao, <strong>Yalun Dai</strong>, Yangyu Huang, Qihao Zhao, Wenshan Wu, Hugo He, Ruishuo Chen, Jin Jiang, Qianli Ma, Jiahuan Zhang, Xin Zhang, Ying Xin, Yang Ou, Yan Xia, Scarlett Li, Longbo Huang, Zhipeng Zhang, Yang He, Yap Kim Hui, Yan Lu</p><p class="publication-meta"><span class="venue">Technical Report, 2026</span><span class="paper-links"><a href="https://arxiv.org/abs/2607.04438">[Paper]</a></span></p></article>
@@ -88,5 +93,52 @@
 
     <footer>© 2026 Yalun Dai</footer>
   </div>
+  <script>
+    (() => {
+      const host = document.querySelector(".publication-columns");
+      const groups = [...host.querySelectorAll(".publication-group")];
+      const order = [
+        "ResearchStudio-Reel: Automate the Last Mile of Research from Paper to Poster, Video, and Blog",
+        "ResearchStudio-Idea: An Evidence-Grounded Research-Ideation Skill Suite from ML Conference Outcomes",
+        "S-Agent: Spatial Tool-Use Elicits Reasoning for Spatial Intelligence",
+        "Demystifying Data Organization for Enhanced LLM Training",
+        "SpatialBench: Is Your Spatial Foundation Model an All-Round Player?",
+        "OmniVGGT: Omni-Modality Driven Visual Geometry Grounded Transformer",
+        "From Spatial to Actions: Grounding Vision-Language-Action Model in Spatial Foundation Priors",
+        "CoSurfGS: Collaborative 3D Surface Gaussian Splatting with Distributed Learning for Large Scene Reconstruction",
+        "Radiant: Large-scale 3D Gaussian Rendering based on Hierarchical Framework",
+        "Data Efficacy for Language Model Training",
+        "Training-Free Dataset Pruning for Instance Segmentation",
+        "LTRL: Boosting Long-tail Recognition via Reflective Learning",
+        "GGRt: Towards Pose-free Generalizable 3D Gaussian Splatting in Real-time",
+        "LTGC: Long-tail Recognition via Leveraging LLMs-driven Generated Content",
+        "GP-NeRF: Generalized Perception NeRF for Context-Aware 3D Scene Understanding",
+        "SPGC: Shape-Prior-Based Generated Content Data Augmentation for Remote Sensing Object Detection",
+        "Boosting Low-Data Instance Segmentation by Unsupervised Pre-training with Saliency Prompt"
+      ];
+      const rank = new Map(order.map((title, index) => [title, index]));
+      const papers = groups.flatMap((group) => [...group.querySelectorAll(".publication")].map((paper) => {
+        paper.dataset.category = group.dataset.category;
+        return paper;
+      })).sort((a, b) => (rank.get(a.querySelector("h4").textContent) ?? 999) - (rank.get(b.querySelector("h4").textContent) ?? 999));
+
+      host.replaceChildren(...papers);
+      host.className = "publication-list";
+
+      document.querySelectorAll(".publication-filter button").forEach((button) => {
+        button.addEventListener("click", () => {
+          const filter = button.dataset.filter;
+          document.querySelectorAll(".publication-filter button").forEach((item) => {
+            const active = item === button;
+            item.classList.toggle("active", active);
+            item.setAttribute("aria-selected", String(active));
+          });
+          papers.forEach((paper) => {
+            paper.hidden = filter !== "All" && paper.dataset.category !== filter;
+          });
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

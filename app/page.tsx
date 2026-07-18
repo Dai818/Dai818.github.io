@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 const news = [
   {
     year: "2026",
@@ -148,7 +152,37 @@ const publicationGroups = [
   },
 ];
 
+const publicationOrder = [
+  "ResearchStudio-Reel: Automate the Last Mile of Research from Paper to Poster, Video, and Blog",
+  "ResearchStudio-Idea: An Evidence-Grounded Research-Ideation Skill Suite from ML Conference Outcomes",
+  "S-Agent: Spatial Tool-Use Elicits Reasoning for Spatial Intelligence",
+  "Demystifying Data Organization for Enhanced LLM Training",
+  "SpatialBench: Is Your Spatial Foundation Model an All-Round Player?",
+  "OmniVGGT: Omni-Modality Driven Visual Geometry Grounded Transformer",
+  "From Spatial to Actions: Grounding Vision-Language-Action Model in Spatial Foundation Priors",
+  "CoSurfGS: Collaborative 3D Surface Gaussian Splatting with Distributed Learning for Large Scene Reconstruction",
+  "Radiant: Large-scale 3D Gaussian Rendering based on Hierarchical Framework",
+  "Data Efficacy for Language Model Training",
+  "Training-Free Dataset Pruning for Instance Segmentation",
+  "LTRL: Boosting Long-tail Recognition via Reflective Learning",
+  "GGRt: Towards Pose-free Generalizable 3D Gaussian Splatting in Real-time",
+  "LTGC: Long-tail Recognition via Leveraging LLMs-driven Generated Content",
+  "GP-NeRF: Generalized Perception NeRF for Context-Aware 3D Scene Understanding",
+  "SPGC: Shape-Prior-Based Generated Content Data Augmentation for Remote Sensing Object Detection",
+  "Boosting Low-Data Instance Segmentation by Unsupervised Pre-training with Saliency Prompt",
+];
+
+const publicationRank = new Map(publicationOrder.map((title, index) => [title, index]));
+const papers = publicationGroups
+  .flatMap((group) => group.papers.map((paper) => ({ ...paper, category: group.title })))
+  .sort((a, b) => (publicationRank.get(a.title) ?? 999) - (publicationRank.get(b.title) ?? 999));
+
+const publicationFilters = ["All", "Embodied AI", "Data-Centric AI"];
+
 export default function Home() {
+  const [activeFilter, setActiveFilter] = useState("All");
+  const visiblePapers = activeFilter === "All" ? papers : papers.filter((paper) => paper.category === activeFilter);
+
   return (
     <div className="site-container">
       <main id="top">
@@ -183,23 +217,30 @@ export default function Home() {
 
         <section className="page-section" id="publications">
           <h2>Selected Publications (<a href="https://scholar.google.com/citations?user=6XyNVowAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>)</h2>
-          <div className="publication-columns">
-            {publicationGroups.map((group) => (
-              <div className="publication-group" key={group.title}>
-                <h3>{group.title}</h3>
-                <div className="publication-list">
-                  {group.papers.map((paper) => (
-                    <article className="publication" key={paper.title}>
-                      <h4>{paper.title}</h4>
-                      <p className="authors">{paper.authors}</p>
-                      <p className="publication-meta">
-                        <span className="venue">{paper.venue}</span>
-                        <span className="paper-links">{paper.links.map(([label, href]) => <a key={`${paper.title}-${label}`} href={href} target="_blank" rel="noreferrer">[{label}]</a>)}</span>
-                      </p>
-                    </article>
-                  ))}
-                </div>
-              </div>
+          <div className="publication-filter" role="tablist" aria-label="Filter publications by research area">
+            {publicationFilters.map((filter) => (
+              <button
+                type="button"
+                role="tab"
+                aria-selected={activeFilter === filter}
+                className={activeFilter === filter ? "active" : ""}
+                onClick={() => setActiveFilter(filter)}
+                key={filter}
+              >
+                {filter}
+              </button>
+            ))}
+          </div>
+          <div className="publication-list">
+            {visiblePapers.map((paper) => (
+              <article className="publication" key={paper.title}>
+                <h4>{paper.title}</h4>
+                <p className="authors">{paper.authors}</p>
+                <p className="publication-meta">
+                  <span className="venue">{paper.venue}</span>
+                  <span className="paper-links">{paper.links.map(([label, href]) => <a key={`${paper.title}-${label}`} href={href} target="_blank" rel="noreferrer">[{label}]</a>)}</span>
+                </p>
+              </article>
             ))}
           </div>
         </section>
