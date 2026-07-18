@@ -1,7 +1,11 @@
 const news = [
-  { date: "May 2026", text: <><a href="https://arxiv.org/abs/2605.30334">Demystifying Data Organization for Enhanced LLM Training</a> was accepted to ACL 2026 Main Conference.</> },
-  { date: "Jan 2026", text: <><a href="https://arxiv.org/abs/2510.17439">From Spatial to Actions</a> was accepted to ICLR 2026.</> },
-  { date: "Jan 2025", text: <><a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/4a5a9f5c15632e9f52c9c1ba4134f13c-Abstract-Conference.html">Training-Free Dataset Pruning for Instance Segmentation</a> was accepted to ICLR 2025.</> },
+  { date: "2026", text: <><a href="https://arxiv.org/abs/2605.30334">Demystifying Data Organization for Enhanced LLM Training</a> was accepted to ACL 2026 Main Conference.</> },
+  { date: "2026", text: <><a href="https://arxiv.org/abs/2510.17439">From Spatial to Actions</a> was accepted to ICLR 2026.</> },
+  { date: "2026", text: <><a href="https://arxiv.org/abs/2412.17612">CoSurfGS</a> was accepted to the International Journal of Computer Vision (IJCV).</> },
+  { date: "2025", text: <><a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/4a5a9f5c15632e9f52c9c1ba4134f13c-Abstract-Conference.html">Training-Free Dataset Pruning for Instance Segmentation</a> was accepted to ICLR 2025.</> },
+  { date: "2024", text: <><a href="https://arxiv.org/abs/2403.10147">GGRt</a> was accepted to ECCV 2024.</> },
+  { date: "2024", text: <><a href="https://arxiv.org/abs/2311.11863">GP-NeRF</a> was accepted to CVPR 2024 as a Highlight.</> },
+  { date: "2024", text: <><a href="https://arxiv.org/abs/2403.05854">LTGC</a> was accepted to CVPR 2024 as an Oral.</> },
 ];
 
 const papers = [
@@ -83,7 +87,7 @@ export default function Home() {
         <section className="page-section" id="news">
           <h2>News</h2>
           <div className="news-list">
-            {news.map((item) => <div className="news-item" key={item.date}><time>{item.date}</time><p>{item.text}</p></div>)}
+            {news.map((item, index) => <div className="news-item" key={`${item.date}-${index}`}><time>{item.date}</time><p>{item.text}</p></div>)}
           </div>
         </section>
 
