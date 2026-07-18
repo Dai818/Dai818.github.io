@@ -1,8 +1,7 @@
 const news = [
-  { date: "Jun 2026", text: <>We released <a href="https://ropedia.github.io/S-Agent/">S-Agent</a>, a spatial tool-use agent for continuous multi-view and video reasoning.</> },
   { date: "May 2026", text: <><a href="https://arxiv.org/abs/2605.30334">Demystifying Data Organization for Enhanced LLM Training</a> was accepted to ACL 2026 Main Conference.</> },
   { date: "Jan 2026", text: <><a href="https://arxiv.org/abs/2510.17439">From Spatial to Actions</a> was accepted to ICLR 2026.</> },
-  { date: "Apr 2025", text: <><a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/4a5a9f5c15632e9f52c9c1ba4134f13c-Abstract-Conference.html">Training-Free Dataset Pruning for Instance Segmentation</a> was presented at ICLR 2025.</> },
+  { date: "Jan 2025", text: <><a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/4a5a9f5c15632e9f52c9c1ba4134f13c-Abstract-Conference.html">Training-Free Dataset Pruning for Instance Segmentation</a> was accepted to ICLR 2025.</> },
 ];
 
 const papers = [
@@ -67,7 +66,6 @@ export default function Home() {
     <div className="site-container">
       <main id="top">
         <section className="page-section about-section" id="about">
-          <h2>About me</h2>
           <div className="about-grid">
             <div className="photo-placeholder" role="img" aria-label="Portrait placeholder"><span>Photo</span></div>
             <div className="about-copy">
