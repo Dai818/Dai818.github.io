@@ -1,11 +1,34 @@
 const news = [
-  { date: "2026", text: <><a href="https://arxiv.org/abs/2605.30334">Demystifying Data Organization for Enhanced LLM Training</a> was accepted to ACL 2026 Main Conference.</> },
-  { date: "2026", text: <><a href="https://arxiv.org/abs/2510.17439">From Spatial to Actions</a> was accepted to ICLR 2026.</> },
-  { date: "2026", text: <><a href="https://arxiv.org/abs/2412.17612">CoSurfGS</a> was accepted to the International Journal of Computer Vision (IJCV).</> },
-  { date: "2025", text: <><a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/4a5a9f5c15632e9f52c9c1ba4134f13c-Abstract-Conference.html">Training-Free Dataset Pruning for Instance Segmentation</a> was accepted to ICLR 2025.</> },
-  { date: "2024", text: <><a href="https://arxiv.org/abs/2403.10147">GGRt</a> was accepted to ECCV 2024.</> },
-  { date: "2024", text: <><a href="https://arxiv.org/abs/2311.11863">GP-NeRF</a> was accepted to CVPR 2024 as a Highlight.</> },
-  { date: "2024", text: <><a href="https://arxiv.org/abs/2403.05854">LTGC</a> was accepted to CVPR 2024 as an Oral.</> },
+  {
+    year: "2026",
+    items: [
+      <>One paper was accepted to CVPR 2026: <a href="https://arxiv.org/abs/2511.10560">OmniVGGT</a> (Highlight).</>,
+      <>One paper was accepted to ICLR 2026: <a href="https://arxiv.org/abs/2510.17439">From Spatial to Actions</a>.</>,
+      <>One paper was accepted to ACL 2026 Main Conference: <a href="https://aclanthology.org/2026.acl-long.1262/">Demystifying Data Organization for Enhanced LLM Training</a>.</>,
+      <>One paper was accepted to IJCV: <a href="https://doi.org/10.1007/s11263-025-02627-9">CoSurfGS</a>.</>,
+      <>One paper was accepted to IEEE TSC: <a href="https://doi.org/10.1109/TSC.2026.3671739">Radiant</a>.</>,
+    ],
+  },
+  {
+    year: "2025",
+    items: [
+      <>One paper was accepted to ICLR 2025: <a href="https://openreview.net/forum?id=rvxWEbTtRY">Training-Free Dataset Pruning for Instance Segmentation</a>.</>,
+    ],
+  },
+  {
+    year: "2024",
+    items: [
+      <>Two papers were accepted to CVPR 2024: <a href="https://doi.org/10.1109/CVPR52733.2024.01845">LTGC</a> (Oral) and <a href="https://doi.org/10.1109/CVPR52733.2024.02051">GP-NeRF</a> (Highlight).</>,
+      <>Two papers were accepted to ECCV 2024: <a href="https://doi.org/10.1007/978-3-031-73209-6_19">GGRt</a> and <a href="https://doi.org/10.1007/978-3-031-72855-6_1">LTRL</a> (Oral).</>,
+      <>One paper was accepted to IEEE TGRS: <a href="https://doi.org/10.1109/TGRS.2024.3373442">SPGC</a>.</>,
+    ],
+  },
+  {
+    year: "2023",
+    items: [
+      <>One paper was accepted to CVPR 2023: <a href="https://doi.org/10.1109/CVPR52729.2023.01486">Boosting Low-Data Instance Segmentation by Unsupervised Pre-training with Saliency Prompt</a>.</>,
+    ],
+  },
 ];
 
 const papers = [
@@ -87,7 +110,14 @@ export default function Home() {
         <section className="page-section" id="news">
           <h2>News</h2>
           <div className="news-list">
-            {news.map((item, index) => <div className="news-item" key={`${item.date}-${index}`}><time>{item.date}</time><p>{item.text}</p></div>)}
+            {news.map((group) => (
+              <div className="news-year" key={group.year}>
+                <time>{group.year}</time>
+                <div className="news-year-items">
+                  {group.items.map((item, index) => <p key={`${group.year}-${index}`}>{item}</p>)}
+                </div>
+              </div>
+            ))}
           </div>
         </section>
 

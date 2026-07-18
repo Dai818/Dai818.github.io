@@ -42,9 +42,9 @@ a:hover { text-decoration: underline; }
 .about-copy p { margin: 0 0 9px; }
 .about-copy strong { font-weight: 600; }
 
-.news-item { display: grid; grid-template-columns: 82px 1fr; gap: 12px; margin: 4px 0; }
-.news-item time { color: var(--muted); white-space: nowrap; }
-.news-item p { margin: 0; }
+.news-year { display: grid; grid-template-columns: 52px 1fr; gap: 12px; margin: 5px 0 9px; }
+.news-year time { color: var(--muted); white-space: nowrap; }
+.news-year-items p { margin: 0 0 3px; }
 
 .publication-note { margin: -3px 0 16px; color: var(--muted); font-size: 12px; }
 .publication { margin-bottom: 17px; }
@@ -63,5 +63,5 @@ footer { padding-top: 11px; border-top: 1px solid var(--line); color: #888; font
   .about-grid { grid-template-columns: 1fr; gap: 16px; }
   .photo-placeholder { width: 130px; height: 160px; }
   .about-copy h1 { margin-top: 0; font-size: 22px; }
-  .news-item { grid-template-columns: 72px 1fr; gap: 8px; }
+  .news-year { grid-template-columns: 46px 1fr; gap: 8px; }
 }
