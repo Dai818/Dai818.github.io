@@ -72,78 +72,51 @@ const papers = [
 export default function Home() {
   return (
     <div className="site-container">
-      <header className="site-header">
-        <a className="site-name" href="#top">Yalun Dai</a>
-        <nav aria-label="Primary navigation">
-          <a href="#about">About</a>
-          <a href="#news">News</a>
-          <a href="#publications">Publications</a>
-        </nav>
-        <a className="header-scholar" href="https://scholar.google.com/citations?user=6XyNVowAAAAJ&hl=en" target="_blank" rel="noreferrer">Scholar ↗</a>
-      </header>
-
       <main id="top">
-        <section className="intro" id="about">
-          <div className="intro-title">
-            <p className="eyebrow">Nanyang Technological University · Singapore</p>
-            <h1>Yalun Dai</h1>
-            <p className="research-line">Data-centric AI <span>·</span> Embodied AI</p>
-          </div>
-          <div className="intro-copy">
-            <p className="lead">
-              I am a second-year PhD student at Nanyang Technological University (NTU), supported by the
-              <strong> NTU Research Scholarship</strong> and supervised by <a href="https://www.ntu.edu.sg/research/faculty-directory/detail/Yap-Kim-Hui" target="_blank" rel="noreferrer">Prof. Yap Kim-Hui</a>.
-              I also collaborate on several research projects with <a href="https://liuziwei7.github.io/" target="_blank" rel="noreferrer">Prof. Ziwei Liu</a>.
-            </p>
-            <p>
-              My research focuses on <strong>Data-centric AI</strong> and <strong>Embodied AI</strong>.
-              Previously, I interned at <strong>ByteDance</strong> and <strong>Microsoft Research</strong>.
-            </p>
-            <div className="profile-links">
-              {profileLinks.map(([label, href]) => <a key={label} href={href} target="_blank" rel="noreferrer">{label} ↗</a>)}
+        <section className="page-section about-section" id="about">
+          <h2>About me</h2>
+          <div className="about-grid">
+            <div className="photo-placeholder" role="img" aria-label="Portrait placeholder"><span>Photo</span></div>
+            <div className="about-copy">
+              <h1>Yalun Dai</h1>
+              <p className="position">Second-year PhD Student, Nanyang Technological University</p>
+              <p>
+                I am supported by the <strong>NTU Research Scholarship</strong> and supervised by <a href="https://www.ntu.edu.sg/research/faculty-directory/detail/Yap-Kim-Hui" target="_blank" rel="noreferrer">Prof. Yap Kim-Hui</a>.
+                I also collaborate on several research projects with <a href="https://liuziwei7.github.io/" target="_blank" rel="noreferrer">Prof. Ziwei Liu</a>.
+              </p>
+              <p>My research focuses on <strong>Data-centric AI</strong> and <strong>Embodied AI</strong>.</p>
+              <p>Previously, I interned at <strong>ByteDance</strong> and <strong>Microsoft Research</strong>.</p>
+              <div className="profile-links">
+                {profileLinks.map(([label, href]) => <a key={label} href={href} target="_blank" rel="noreferrer">{label}</a>)}
+              </div>
             </div>
           </div>
         </section>
 
-        <section className="quick-facts" aria-label="Academic profile summary">
-          <div><span>Position</span><strong>Second-year PhD Student</strong><small>NTU Research Scholarship</small></div>
-          <div><span>Research</span><strong>Data-centric AI</strong><small>Embodied AI</small></div>
-          <div><span>Experience</span><strong>ByteDance</strong><small>Microsoft Research</small></div>
-        </section>
-
-        <section className="section section-grid" id="news">
-          <div className="section-label"><span>01</span><h2>News</h2></div>
-          <div className="news-list section-content">
+        <section className="page-section" id="news">
+          <h2>News</h2>
+          <div className="news-list">
             {news.map((item) => <div className="news-item" key={item.date}><time>{item.date}</time><p>{item.text}</p></div>)}
           </div>
         </section>
 
-        <section className="section section-grid" id="publications">
-          <div className="section-label publication-label">
-            <span>02</span>
-            <h2>Selected<br />Publications</h2>
-            <a href="https://scholar.google.com/citations?user=6XyNVowAAAAJ&hl=en" target="_blank" rel="noreferrer">Full list ↗</a>
-          </div>
-          <div className="publication-wrap section-content">
-            <p className="notation">* Equal contribution · My name is shown in bold</p>
-            <div className="publication-list">
+        <section className="page-section" id="publications">
+          <h2>Selected Publications</h2>
+          <p className="publication-note">For a complete list of publications, please see my <a href="https://scholar.google.com/citations?user=6XyNVowAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a> profile. * indicates equal contribution.</p>
+          <div className="publication-list">
             {papers.map((paper) => (
               <article className="publication" key={paper.title}>
-                <p className="venue">{paper.venue}</p>
                 <h3>{paper.title}</h3>
                 <p className="authors">{paper.authors}</p>
+                <p className="venue">{paper.venue}</p>
                 <p className="paper-links">{paper.links.map(([label, href]) => <a key={label} href={href} target="_blank" rel="noreferrer">[{label}]</a>)}</p>
               </article>
             ))}
-            </div>
           </div>
         </section>
       </main>
 
-      <footer>
-        <span>© 2026 Yalun Dai</span>
-        <a href="#top">Back to top</a>
-      </footer>
+      <footer>© 2026 Yalun Dai</footer>
     </div>
   );
 }
