@@ -73,11 +73,11 @@ export default function Home() {
             <div className="about-copy">
               <h1>Yalun Dai</h1>
               <p>
-                I am a second-year PhD student at Nanyang Technological University (NTU), supported by the <strong>NTU Research Scholarship</strong> and supervised by <a href="https://www.ntu.edu.sg/research/faculty-directory/detail/Yap-Kim-Hui" target="_blank" rel="noreferrer">Prof. Yap Kim-Hui</a>.
+                I am a second-year PhD student at Nanyang Technological University (NTU Research Scholarship), supervised by <a href="https://www.ntu.edu.sg/research/faculty-directory/detail/Yap-Kim-Hui" target="_blank" rel="noreferrer">Prof. Yap Kim-Hui</a>.
                 I also collaborate on several research projects with <a href="https://liuziwei7.github.io/" target="_blank" rel="noreferrer">Prof. Ziwei Liu</a>.
+                My research focuses on <strong>Data-centric AI</strong> and <strong>Embodied AI</strong>.
+                Previously, I interned at <strong>ByteDance</strong> and <strong>Microsoft Research</strong>.
               </p>
-              <p>My research focuses on <strong>Data-centric AI</strong> and <strong>Embodied AI</strong>.</p>
-              <p>Previously, I interned at <strong>ByteDance</strong> and <strong>Microsoft Research</strong>.</p>
             </div>
           </div>
         </section>
