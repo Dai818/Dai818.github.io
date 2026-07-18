@@ -21,7 +21,7 @@ const news = [
     year: "2024",
     items: [
       <>Two papers were accepted to <strong>CVPR 2024</strong>: <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Zhao_LTGC_Long-tail_Recognition_via_Leveraging_LLMs-driven_Generated_Content_CVPR_2024_paper.pdf">LTGC</a> (<strong>Oral</strong>) and <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Li_GP-NeRF_Generalized_Perception_NeRF_for_Context-Aware_3D_Scene_Understanding_CVPR_2024_paper.pdf">GP-NeRF</a> (<strong>Highlight</strong>).</>,
-      <>Two papers were accepted to <strong>ECCV 2024</strong>: <a href="https://arxiv.org/abs/2403.10147">GGRt</a> and <a href="https://arxiv.org/abs/2407.12568">LTRL</a> (<strong>Oral</strong>).</>,
+      <>Two papers were accepted to <strong>ECCV 2024</strong>: <a href="https://arxiv.org/abs/2407.12568">LTRL</a> (<strong>Oral</strong>) and <a href="https://arxiv.org/abs/2403.10147">GGRt</a>.</>,
       <>One paper was accepted to IEEE TGRS: <a href="https://doi.org/10.1109/TGRS.2024.3373442">SPGC</a>.</>,
     ],
   },
