@@ -4,18 +4,18 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://dai818.github.io"),
   title: "Yalun Dai",
-  description: "Academic homepage of Yalun Dai — data-centric machine learning, spatial intelligence, and efficient computer vision.",
+  description: "Yalun Dai is a PhD student at NTU working on Data-centric AI and Embodied AI.",
   openGraph: {
     title: "Yalun Dai",
-    description: "Data-centric machine learning · Spatial intelligence · Efficient computer vision",
+    description: "PhD student at NTU · Data-centric AI · Embodied AI",
     url: "https://dai818.github.io",
     siteName: "Yalun Dai",
-    images: [{ url: "https://avatars.githubusercontent.com/Dai818?v=4", alt: "Yalun Dai" }],
+    images: [{ url: "/og-v2.png", width: 1536, height: 1024, alt: "Yalun Dai — Data-centric AI and Embodied AI" }],
     type: "website",
   },
-  twitter: { card: "summary", title: "Yalun Dai", description: "Academic homepage of Yalun Dai" },
+  twitter: { card: "summary_large_image", title: "Yalun Dai", description: "PhD student at NTU · Data-centric AI · Embodied AI", images: ["/og-v2.png"] },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><head><link rel="stylesheet" href="/site.css" /><link rel="icon" href="https://avatars.githubusercontent.com/Dai818?v=4" /></head><body>{children}</body></html>;
+  return <html lang="en"><head><link rel="stylesheet" href="/site.css" /></head><body>{children}</body></html>;
 }

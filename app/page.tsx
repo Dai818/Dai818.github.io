@@ -79,48 +79,63 @@ export default function Home() {
           <a href="#news">News</a>
           <a href="#publications">Publications</a>
         </nav>
+        <a className="header-scholar" href="https://scholar.google.com/citations?user=6XyNVowAAAAJ&hl=en" target="_blank" rel="noreferrer">Scholar ↗</a>
       </header>
 
       <main id="top">
         <section className="intro" id="about">
-          <div className="intro-copy">
+          <div className="intro-title">
+            <p className="eyebrow">Nanyang Technological University · Singapore</p>
             <h1>Yalun Dai</h1>
-            <p className="role">AI Researcher · Nanyang Technological University, Singapore</p>
-            <p>
-              I work on <strong>data-centric machine learning</strong>, <strong>spatial intelligence</strong>,
-              and <strong>efficient computer vision</strong>. My recent research studies how training data
-              can be selected and organized more effectively, and how visual systems can reason about 3D scenes.
+            <p className="research-line">Data-centric AI <span>·</span> Embodied AI</p>
+          </div>
+          <div className="intro-copy">
+            <p className="lead">
+              I am a second-year PhD student at Nanyang Technological University (NTU), supported by the
+              <strong> NTU Research Scholarship</strong> and supervised by <a href="https://www.ntu.edu.sg/research/faculty-directory/detail/Yap-Kim-Hui" target="_blank" rel="noreferrer">Prof. Yap Kim-Hui</a>.
+              I also collaborate on several research projects with <a href="https://liuziwei7.github.io/" target="_blank" rel="noreferrer">Prof. Ziwei Liu</a>.
             </p>
-            <p className="research-interests"><span>Research interests:</span> Data-centric AI, language model training, spatial reasoning, 3D vision.</p>
+            <p>
+              My research focuses on <strong>Data-centric AI</strong> and <strong>Embodied AI</strong>.
+              Previously, I interned at <strong>ByteDance</strong> and <strong>Microsoft Research</strong>.
+            </p>
             <div className="profile-links">
-              {profileLinks.map(([label, href]) => <a key={label} href={href} target="_blank" rel="noreferrer">{label}</a>)}
+              {profileLinks.map(([label, href]) => <a key={label} href={href} target="_blank" rel="noreferrer">{label} ↗</a>)}
             </div>
           </div>
-          <img className="portrait" src="https://avatars.githubusercontent.com/Dai818?v=4" alt="Yalun Dai" />
         </section>
 
-        <section className="section" id="news">
-          <h2>News</h2>
-          <div className="news-list">
+        <section className="quick-facts" aria-label="Academic profile summary">
+          <div><span>Position</span><strong>Second-year PhD Student</strong><small>NTU Research Scholarship</small></div>
+          <div><span>Research</span><strong>Data-centric AI</strong><small>Embodied AI</small></div>
+          <div><span>Experience</span><strong>ByteDance</strong><small>Microsoft Research</small></div>
+        </section>
+
+        <section className="section section-grid" id="news">
+          <div className="section-label"><span>01</span><h2>News</h2></div>
+          <div className="news-list section-content">
             {news.map((item) => <div className="news-item" key={item.date}><time>{item.date}</time><p>{item.text}</p></div>)}
           </div>
         </section>
 
-        <section className="section" id="publications">
-          <div className="section-heading">
-            <h2>Selected Publications</h2>
-            <a href="https://scholar.google.com/citations?user=6XyNVowAAAAJ&hl=en" target="_blank" rel="noreferrer">Full list on Google Scholar</a>
+        <section className="section section-grid" id="publications">
+          <div className="section-label publication-label">
+            <span>02</span>
+            <h2>Selected<br />Publications</h2>
+            <a href="https://scholar.google.com/citations?user=6XyNVowAAAAJ&hl=en" target="_blank" rel="noreferrer">Full list ↗</a>
           </div>
-          <p className="notation">* indicates equal contribution. My name is shown in bold.</p>
-          <div className="publication-list">
+          <div className="publication-wrap section-content">
+            <p className="notation">* Equal contribution · My name is shown in bold</p>
+            <div className="publication-list">
             {papers.map((paper) => (
               <article className="publication" key={paper.title}>
+                <p className="venue">{paper.venue}</p>
                 <h3>{paper.title}</h3>
                 <p className="authors">{paper.authors}</p>
-                <p className="venue">{paper.venue}</p>
                 <p className="paper-links">{paper.links.map(([label, href]) => <a key={label} href={href} target="_blank" rel="noreferrer">[{label}]</a>)}</p>
               </article>
             ))}
+            </div>
           </div>
         </section>
       </main>
