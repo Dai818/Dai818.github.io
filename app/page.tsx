@@ -4,7 +4,7 @@ const news = [
     items: [
       <>One paper was accepted to CVPR 2026: <a href="https://arxiv.org/abs/2511.10560">OmniVGGT</a> (Highlight).</>,
       <>One paper was accepted to ICLR 2026: <a href="https://arxiv.org/abs/2510.17439">From Spatial to Actions</a>.</>,
-      <>One paper was accepted to ACL 2026 Main Conference: <a href="https://aclanthology.org/2026.acl-long.1262/">Demystifying Data Organization for Enhanced LLM Training</a>.</>,
+      <>One paper was accepted to ACL 2026 Main Conference: <a href="https://aclanthology.org/2026.acl-long.1262/">Data Organization</a>.</>,
       <>One paper was accepted to IJCV: <a href="https://doi.org/10.1007/s11263-025-02627-9">CoSurfGS</a>.</>,
       <>One paper was accepted to IEEE TSC: <a href="https://doi.org/10.1109/TSC.2026.3671739">Radiant</a>.</>,
     ],
@@ -12,7 +12,7 @@ const news = [
   {
     year: "2025",
     items: [
-      <>One paper was accepted to ICLR 2025: <a href="https://openreview.net/forum?id=rvxWEbTtRY">Training-Free Dataset Pruning for Instance Segmentation</a>.</>,
+      <>One paper was accepted to ICLR 2025: <a href="https://openreview.net/forum?id=rvxWEbTtRY">Training-Free Dataset Pruning for Instance Segmentation</a> (TFDP).</>,
     ],
   },
   {
@@ -26,7 +26,7 @@ const news = [
   {
     year: "2023",
     items: [
-      <>One paper was accepted to CVPR 2023: <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Li_Boosting_Low-Data_Instance_Segmentation_by_Unsupervised_Pre-Training_With_Saliency_Prompt_CVPR_2023_paper.pdf">Saliency Prompt (SP)</a>.</>,
+      <>One paper was accepted to CVPR 2023: <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Li_Boosting_Low-Data_Instance_Segmentation_by_Unsupervised_Pre-Training_With_Saliency_Prompt_CVPR_2023_paper.pdf">Saliency Prompt</a>.</>,
     ],
   },
 ];
