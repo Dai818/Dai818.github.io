@@ -97,8 +97,10 @@ export default function Home() {
               <article className="publication" key={paper.title}>
                 <h3>{paper.title}</h3>
                 <p className="authors">{paper.authors}</p>
-                <p className="venue">{paper.venue}</p>
-                <p className="paper-links">{paper.links.map(([label, href]) => <a key={label} href={href} target="_blank" rel="noreferrer">[{label}]</a>)}</p>
+                <p className="publication-meta">
+                  <span className="venue">{paper.venue}</span>
+                  <span className="paper-links">{paper.links.map(([label, href]) => <a key={label} href={href} target="_blank" rel="noreferrer">[{label}]</a>)}</span>
+                </p>
               </article>
             ))}
           </div>
