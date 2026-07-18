@@ -43,50 +43,58 @@ const publicationGroups = [
     papers: [
       {
         title: "S-Agent: Spatial Tool-Use Elicits Reasoning for Spatial Intelligence",
+        image: "/publications/s-agent.webp",
         authors: <><strong>Yalun Dai</strong>*, Hao Li*, Shulin Tian, Runmao Yao, Yuhao Dong, Fangzhou Hong, Zhaoxi Chen, Fangfu Liu, Baoliang Tian, Dingwen Zhang, Tao Wang, Kim-Hui Yap, Ziwei Liu</>,
-        venue: "Technical Report, 2026",
+        venue: "arXiv, 2026",
         links: [["Project", "https://ropedia.github.io/S-Agent/"], ["Paper", "https://arxiv.org/abs/2606.20515"]],
       },
       {
         title: "SpatialBench: Is Your Spatial Foundation Model an All-Round Player?",
+        image: "/publications/spatialbench.webp",
         authors: <>Haosong Peng, Hao Li, Jiaqi Chen, Yuhao Pan, Runmao Yao, <strong>Yalun Dai</strong>, Fushuo Huo, Fangzhou Hong, Zhaoxi Chen, Haozhao Wang, Dingwen Zhang, Ziwei Liu, Wenchao Xu</>,
-        venue: "Technical Report, 2026",
+        venue: "arXiv, 2026",
         links: [["Paper", "https://arxiv.org/abs/2605.27367"]],
       },
       {
         title: "OmniVGGT: Omni-Modality Driven Visual Geometry Grounded Transformer",
+        image: "/publications/omnivggt.webp",
         authors: <>Haosong Peng, Hao Li, <strong>Yalun Dai</strong>, Yushi Lan, Yihang Luo, Tianyu Qi, Zhengshen Zhang, Yufeng Zhan, Junfei Zhang, Wenchao Xu, Ziwei Liu</>,
-        venue: "CVPR 2026, Highlight",
+        venue: <><strong>CVPR 2026</strong>, Highlight</>,
         links: [["Paper", "https://arxiv.org/abs/2511.10560"]],
       },
       {
         title: "From Spatial to Actions: Grounding Vision-Language-Action Model in Spatial Foundation Priors",
+        image: "/publications/spatial-to-actions.webp",
         authors: <>Zhengshen Zhang*, Hao Li*, <strong>Yalun Dai</strong>, Zhengbang Zhu, Lei Zhou, Chenchen Liu, Dong Wang, Francis E. H. Tay, Sijin Chen, Ziwei Liu, et al.</>,
-        venue: "ICLR 2026",
+        venue: <strong>ICLR 2026</strong>,
         links: [["Paper", "https://arxiv.org/abs/2510.17439"], ["Project", "https://falcon-vla.github.io/"]],
       },
       {
         title: "CoSurfGS: Collaborative 3D Surface Gaussian Splatting with Distributed Learning for Large Scene Reconstruction",
+        image: "/publications/cosurfgs.webp",
         authors: <>Yuanyuan Gao*, <strong>Yalun Dai</strong>*, Hao Li*, Weicai Ye, Jiaqi Chen, Dingwen Zhang, Tong He, Guofeng Zhang, Junwei Han</>,
         venue: "International Journal of Computer Vision, 2026",
         links: [["Paper", "https://arxiv.org/abs/2412.17612"]],
       },
       {
         title: "Radiant: Large-scale 3D Gaussian Rendering based on Hierarchical Framework",
+        image: "/publications/radiant.webp",
         authors: <>Haosong Peng, Tianyu Qi, Yufeng Zhan, Hao Li, <strong>Yalun Dai</strong>, Yuanqing Xia</>,
         venue: "IEEE Transactions on Services Computing, 2026",
         links: [["Paper", "https://arxiv.org/abs/2412.05546"]],
       },
       {
         title: "GGRt: Towards Pose-free Generalizable 3D Gaussian Splatting in Real-time",
+        image: "/publications/ggrt.webp",
         authors: <>Hao Li, Yuanyuan Gao, Chenming Wu, Dingwen Zhang, <strong>Yalun Dai</strong>, Chen Zhao, Haocheng Feng, Errui Ding, Jingdong Wang, Junwei Han</>,
-        venue: "ECCV 2024",
+        venue: <strong>ECCV 2024</strong>,
         links: [["Paper", "https://arxiv.org/abs/2403.10147"]],
       },
       {
         title: "GP-NeRF: Generalized Perception NeRF for Context-Aware 3D Scene Understanding",
+        image: "/publications/gp-nerf.webp",
         authors: <>Hao Li, Dingwen Zhang, <strong>Yalun Dai</strong>, Nian Liu, Lechao Cheng, Jingfeng Li, Jingdong Wang, Junwei Han</>,
-        venue: "CVPR 2024, Highlight",
+        venue: <><strong>CVPR 2024</strong>, Highlight</>,
         links: [["Paper", "https://arxiv.org/abs/2311.11863"]],
       },
     ],
@@ -96,56 +104,65 @@ const publicationGroups = [
     papers: [
       {
         title: "ResearchStudio-Reel: Automate the Last Mile of Research from Paper to Poster, Video, and Blog",
+        image: "/publications/researchstudio-reel.webp",
         authors: <>Lingao Xiao, <strong>Yalun Dai</strong>, Yangyu Huang, Qihao Zhao, Wenshan Wu, Hugo He, Ruishuo Chen, Jin Jiang, Qianli Ma, Jiahuan Zhang, Xin Zhang, Ying Xin, Yang Ou, Yan Xia, Scarlett Li, Longbo Huang, Zhipeng Zhang, Yang He, Yap Kim Hui, Yan Lu</>,
-        venue: "Technical Report, 2026",
+        venue: "arXiv, 2026",
         links: [["Paper", "https://arxiv.org/abs/2607.04438"]],
       },
       {
         title: "ResearchStudio-Idea: An Evidence-Grounded Research-Ideation Skill Suite from ML Conference Outcomes",
+        image: "/publications/researchstudio-idea.webp",
         authors: <>Qihao Zhao, Yangyu Huang, <strong>Yalun Dai</strong>, Lingao Xiao, Jianjun Gao, Xin Zhang, Wenshan Wu, Scarlett Li, Yang He, Yan Lu, Yap Kim Hui</>,
-        venue: "Technical Report, 2026",
+        venue: "arXiv, 2026",
         links: [["Paper", "https://arxiv.org/abs/2607.04439"]],
       },
       {
         title: "Demystifying Data Organization for Enhanced LLM Training",
+        image: "/publications/data-organization.webp",
         authors: <><strong>Yalun Dai</strong>, Yangyu Huang, Tongshen Yang, Yonghan Wang, Xin Zhang, Wenshan Wu, Qihao Zhao, Hao Li, Yuanyuan Gao, Kim-Hui Yap, Scarlett Li</>,
-        venue: "ACL 2026, Main Conference",
+        venue: <><strong>ACL 2026</strong>, Main Conference</>,
         links: [["Paper", "https://arxiv.org/abs/2605.30334"], ["Code", "https://github.com/microsoft/data-efficacy"]],
       },
       {
         title: "Data Efficacy for Language Model Training",
+        image: "/publications/data-efficacy.webp",
         authors: <><strong>Yalun Dai</strong>, Yangyu Huang, Xin Zhang, Wenshan Wu, Chong Li, Wenhui Lu, Shijie Cao, Li Dong, Scarlett Li</>,
         venue: "arXiv, 2025",
         links: [["Paper", "https://arxiv.org/abs/2506.21545"], ["Code", "https://github.com/microsoft/data-efficacy"]],
       },
       {
         title: "Training-Free Dataset Pruning for Instance Segmentation",
+        image: "/publications/tfdp.webp",
         authors: <><strong>Yalun Dai</strong>, Lingao Xiao, Ivor W. Tsang, Yang He</>,
-        venue: "ICLR 2025",
+        venue: <strong>ICLR 2025</strong>,
         links: [["Paper", "https://proceedings.iclr.cc/paper_files/paper/2025/hash/4a5a9f5c15632e9f52c9c1ba4134f13c-Abstract-Conference.html"]],
       },
       {
         title: "LTRL: Boosting Long-tail Recognition via Reflective Learning",
+        image: "/publications/ltrl.webp",
         authors: <>Qihao Zhao, <strong>Yalun Dai</strong>, Shen Lin, Wei Hu, Fan Zhang, Jun Liu</>,
-        venue: "ECCV 2024, Oral",
+        venue: <><strong>ECCV 2024</strong>, Oral</>,
         links: [["Paper", "https://arxiv.org/abs/2407.12568"]],
       },
       {
         title: "LTGC: Long-tail Recognition via Leveraging LLMs-driven Generated Content",
+        image: "/publications/ltgc.webp",
         authors: <>Qihao Zhao, <strong>Yalun Dai</strong>, Hao Li, Wei Hu, Fan Zhang, Jun Liu</>,
-        venue: "CVPR 2024, Oral",
+        venue: <><strong>CVPR 2024</strong>, Oral</>,
         links: [["Paper", "https://arxiv.org/abs/2403.05854"]],
       },
       {
         title: "SPGC: Shape-Prior-Based Generated Content Data Augmentation for Remote Sensing Object Detection",
+        image: "/publications/spgc.webp",
         authors: <><strong>Yalun Dai</strong>, Fei Ma, Wei Hu, Fan Zhang</>,
         venue: "IEEE Transactions on Geoscience and Remote Sensing, 2024",
         links: [["Paper", "https://doi.org/10.1109/TGRS.2024.3373442"]],
       },
       {
         title: "Boosting Low-Data Instance Segmentation by Unsupervised Pre-training with Saliency Prompt",
+        image: "/publications/saliency-prompt.webp",
         authors: <>Hao Li, Dingwen Zhang, Nian Liu, Lechao Cheng, <strong>Yalun Dai</strong>, Chao Zhang, Xinggang Wang, Junwei Han</>,
-        venue: "CVPR 2023",
+        venue: <strong>CVPR 2023</strong>,
         links: [["Paper", "https://arxiv.org/abs/2302.01171"]],
       },
     ],
@@ -177,7 +194,7 @@ const papers = publicationGroups
   .flatMap((group) => group.papers.map((paper) => ({ ...paper, category: group.title })))
   .sort((a, b) => (publicationRank.get(a.title) ?? 999) - (publicationRank.get(b.title) ?? 999));
 
-const publicationFilters = ["All", "Embodied AI", "Data-Centric AI"];
+const publicationFilters = ["All", "Data-Centric AI", "Embodied AI"];
 
 export default function Home() {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -234,12 +251,17 @@ export default function Home() {
           <div className="publication-list">
             {visiblePapers.map((paper) => (
               <article className="publication" key={paper.title}>
-                <h4>{paper.title}</h4>
-                <p className="authors">{paper.authors}</p>
-                <p className="publication-meta">
-                  <span className="venue">{paper.venue}</span>
-                  <span className="paper-links">{paper.links.map(([label, href]) => <a key={`${paper.title}-${label}`} href={href} target="_blank" rel="noreferrer">[{label}]</a>)}</span>
-                </p>
+                <a className="publication-thumb" href={paper.links.find(([label]) => label === "Paper")?.[1] ?? paper.links[0][1]} target="_blank" rel="noreferrer" aria-label={`Open ${paper.title}`}>
+                  <img src={paper.image} alt={`${paper.title} overview`} width="640" height="360" loading="lazy" />
+                </a>
+                <div className="publication-details">
+                  <h4>{paper.title}</h4>
+                  <p className="authors">{paper.authors}</p>
+                  <p className="publication-meta">
+                    <span className="venue">{paper.venue}</span>
+                    <span className="paper-links">{paper.links.map(([label, href]) => <a key={`${paper.title}-${label}`} href={href} target="_blank" rel="noreferrer">[{label}]</a>)}</span>
+                  </p>
+                </div>
               </article>
             ))}
           </div>
