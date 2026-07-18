@@ -2,9 +2,9 @@ const news = [
   {
     year: "2026",
     items: [
-      <>One paper was accepted to CVPR 2026: <a href="https://arxiv.org/abs/2511.10560">OmniVGGT</a> (Highlight).</>,
-      <>One paper was accepted to ICLR 2026: <a href="https://arxiv.org/abs/2510.17439">From Spatial to Actions</a>.</>,
-      <>One paper was accepted to ACL 2026 Main Conference: <a href="https://aclanthology.org/2026.acl-long.1262/">Data Organization</a>.</>,
+      <>One paper was accepted to <strong>ACL 2026 Main Conference</strong>: <a href="https://aclanthology.org/2026.acl-long.1262/">Data Organization</a>.</>,
+      <>One paper was accepted to <strong>CVPR 2026</strong>: <a href="https://arxiv.org/abs/2511.10560">OmniVGGT</a> (<strong>Highlight</strong>).</>,
+      <>One paper was accepted to <strong>ICLR 2026</strong>: <a href="https://arxiv.org/abs/2510.17439">From Spatial to Actions</a>.</>,
       <>One paper was accepted to IJCV: <a href="https://doi.org/10.1007/s11263-025-02627-9">CoSurfGS</a>.</>,
       <>One paper was accepted to IEEE TSC: <a href="https://doi.org/10.1109/TSC.2026.3671739">Radiant</a>.</>,
     ],
@@ -12,21 +12,21 @@ const news = [
   {
     year: "2025",
     items: [
-      <>One paper was accepted to ICLR 2025: <a href="https://openreview.net/forum?id=rvxWEbTtRY">TFDP</a>.</>,
+      <>One paper was accepted to <strong>ICLR 2025</strong>: <a href="https://openreview.net/forum?id=rvxWEbTtRY">TFDP</a>.</>,
     ],
   },
   {
     year: "2024",
     items: [
-      <>Two papers were accepted to CVPR 2024: <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Zhao_LTGC_Long-tail_Recognition_via_Leveraging_LLMs-driven_Generated_Content_CVPR_2024_paper.pdf">LTGC</a> (Oral) and <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Li_GP-NeRF_Generalized_Perception_NeRF_for_Context-Aware_3D_Scene_Understanding_CVPR_2024_paper.pdf">GP-NeRF</a> (Highlight).</>,
-      <>Two papers were accepted to ECCV 2024: <a href="https://arxiv.org/abs/2403.10147">GGRt</a> and <a href="https://arxiv.org/abs/2407.12568">LTRL</a> (Oral).</>,
+      <>Two papers were accepted to <strong>CVPR 2024</strong>: <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Zhao_LTGC_Long-tail_Recognition_via_Leveraging_LLMs-driven_Generated_Content_CVPR_2024_paper.pdf">LTGC</a> (<strong>Oral</strong>) and <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Li_GP-NeRF_Generalized_Perception_NeRF_for_Context-Aware_3D_Scene_Understanding_CVPR_2024_paper.pdf">GP-NeRF</a> (<strong>Highlight</strong>).</>,
+      <>Two papers were accepted to <strong>ECCV 2024</strong>: <a href="https://arxiv.org/abs/2403.10147">GGRt</a> and <a href="https://arxiv.org/abs/2407.12568">LTRL</a> (<strong>Oral</strong>).</>,
       <>One paper was accepted to IEEE TGRS: <a href="https://doi.org/10.1109/TGRS.2024.3373442">SPGC</a>.</>,
     ],
   },
   {
     year: "2023",
     items: [
-      <>One paper was accepted to CVPR 2023: <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Li_Boosting_Low-Data_Instance_Segmentation_by_Unsupervised_Pre-Training_With_Saliency_Prompt_CVPR_2023_paper.pdf">Saliency Prompt</a>.</>,
+      <>One paper was accepted to <strong>CVPR 2023</strong>: <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Li_Boosting_Low-Data_Instance_Segmentation_by_Unsupervised_Pre-Training_With_Saliency_Prompt_CVPR_2023_paper.pdf">Saliency Prompt</a>.</>,
     ],
   },
 ];
