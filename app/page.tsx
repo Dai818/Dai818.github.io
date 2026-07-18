@@ -18,15 +18,15 @@ const news = [
   {
     year: "2024",
     items: [
-      <>Two papers were accepted to CVPR 2024: <a href="https://doi.org/10.1109/CVPR52733.2024.01845">LTGC</a> (Oral) and <a href="https://doi.org/10.1109/CVPR52733.2024.02051">GP-NeRF</a> (Highlight).</>,
-      <>Two papers were accepted to ECCV 2024: <a href="https://doi.org/10.1007/978-3-031-73209-6_19">GGRt</a> and <a href="https://doi.org/10.1007/978-3-031-72855-6_1">LTRL</a> (Oral).</>,
+      <>Two papers were accepted to CVPR 2024: <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Zhao_LTGC_Long-tail_Recognition_via_Leveraging_LLMs-driven_Generated_Content_CVPR_2024_paper.pdf">LTGC</a> (Oral) and <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Li_GP-NeRF_Generalized_Perception_NeRF_for_Context-Aware_3D_Scene_Understanding_CVPR_2024_paper.pdf">GP-NeRF</a> (Highlight).</>,
+      <>Two papers were accepted to ECCV 2024: <a href="https://arxiv.org/abs/2403.10147">GGRt</a> and <a href="https://arxiv.org/abs/2407.12568">LTRL</a> (Oral).</>,
       <>One paper was accepted to IEEE TGRS: <a href="https://doi.org/10.1109/TGRS.2024.3373442">SPGC</a>.</>,
     ],
   },
   {
     year: "2023",
     items: [
-      <>One paper was accepted to CVPR 2023: <a href="https://doi.org/10.1109/CVPR52729.2023.01486">Boosting Low-Data Instance Segmentation by Unsupervised Pre-training with Saliency Prompt</a>.</>,
+      <>One paper was accepted to CVPR 2023: <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Li_Boosting_Low-Data_Instance_Segmentation_by_Unsupervised_Pre-Training_With_Saliency_Prompt_CVPR_2023_paper.pdf">Saliency Prompt (SP)</a>.</>,
     ],
   },
 ];
