@@ -2,8 +2,8 @@ const news = [
   {
     year: "2026",
     items: [
-      <><a href="https://ropedia.github.io/S-Agent">S-Agent</a> and SpatialBench released.</>,
-      <>ResearchStudio-Reel and ResearchStudio-Idea released.</>,
+      <><a href="https://arxiv.org/abs/2607.04438">ResearchStudio-Reel</a> and <a href="https://arxiv.org/abs/2607.04439">ResearchStudio-Idea</a> released.</>,
+      <><a href="https://arxiv.org/abs/2606.20515">S-Agent</a> and <a href="https://arxiv.org/abs/2605.27367">SpatialBench</a> released.</>,
       <>One paper was accepted to <strong>ACL 2026</strong> Main Conference: <a href="https://aclanthology.org/2026.acl-long.1262/">Data Organization</a>.</>,
       <>One paper was accepted to <strong>CVPR 2026</strong>: <a href="https://arxiv.org/abs/2511.10560">OmniVGGT</a> (<strong>Highlight</strong>).</>,
       <>One paper was accepted to <strong>ICLR 2026</strong>: <a href="https://arxiv.org/abs/2510.17439">From Spatial to Actions</a>.</>,
