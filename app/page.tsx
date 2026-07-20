@@ -210,7 +210,7 @@ export default function Home() {
           <div className="about-grid">
             <figure className="profile-figure">
               <img className="profile-photo" src="/profile.jpeg" alt="Yalun Dai at Mount Rainier" />
-              <figcaption>Mount Rainier · Seattle, Washington</figcaption>
+              <figcaption>Mount Rainier, Washington</figcaption>
             </figure>
             <div className="about-copy">
               <h1>Yalun Dai</h1>
