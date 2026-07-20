@@ -15,9 +15,9 @@ const news = [
     year: "2026",
     items: [
       <><a href="https://arxiv.org/abs/2607.04438">ResearchStudio-Reel</a> and <a href="https://arxiv.org/abs/2607.04439">ResearchStudio-Idea</a> <GitHubStars repo="microsoft/ResearchStudio" href="https://github.com/microsoft/ResearchStudio" /> released.</>,
-      <><a href="https://arxiv.org/abs/2606.20515">S-Agent</a> and <a href="https://arxiv.org/abs/2605.27367">SpatialBench</a> released.</>,
+      <><a href="https://arxiv.org/abs/2606.20515">S-Agent</a> and <a href="https://arxiv.org/abs/2605.27367">SpatialBench</a> <GitHubStars repo="Ropedia/SpatialBench" href="https://github.com/Ropedia/SpatialBench" /> released.</>,
       <>One paper was accepted to <strong>ACL 2026</strong> Main Conference: <a href="https://aclanthology.org/2026.acl-long.1262/">Data Organization</a>.</>,
-      <>One paper was accepted to <strong>CVPR 2026</strong>: <a href="https://arxiv.org/abs/2511.10560">OmniVGGT</a> (<strong className="award">Highlight</strong>).</>,
+      <>One paper was accepted to <strong>CVPR 2026</strong>: <a href="https://arxiv.org/abs/2511.10560">OmniVGGT</a> <GitHubStars repo="Livioni/OmniVGGT-official" href="https://github.com/Livioni/OmniVGGT-official" /> (<strong className="award">Highlight</strong>).</>,
       <>One paper was accepted to <strong>ICLR 2026</strong>: <a href="https://arxiv.org/abs/2510.17439">From Spatial to Actions</a>.</>,
       <>One paper was accepted to IJCV: <a href="https://doi.org/10.1007/s11263-025-02627-9">CoSurfGS</a>.</>,
       <>One paper was accepted to IEEE TSC: <a href="https://doi.org/10.1109/TSC.2026.3671739">Radiant</a>.</>,
@@ -33,7 +33,7 @@ const news = [
     year: "2024",
     items: [
       <>Two papers were accepted to <strong>CVPR 2024</strong>: <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Zhao_LTGC_Long-tail_Recognition_via_Leveraging_LLMs-driven_Generated_Content_CVPR_2024_paper.pdf">LTGC</a> (<strong className="award">Oral</strong>) and <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Li_GP-NeRF_Generalized_Perception_NeRF_for_Context-Aware_3D_Scene_Understanding_CVPR_2024_paper.pdf">GP-NeRF</a> (<strong className="award">Highlight</strong>).</>,
-      <>Two papers were accepted to <strong>ECCV 2024</strong>: <a href="https://arxiv.org/abs/2407.12568">LTRL</a> (<strong className="award">Oral</strong>) and <a href="https://arxiv.org/abs/2403.10147">GGRt</a>.</>,
+      <>Two papers were accepted to <strong>ECCV 2024</strong>: <a href="https://arxiv.org/abs/2407.12568">LTRL</a> (<strong className="award">Oral</strong>) and <a href="https://arxiv.org/abs/2403.10147">GGRt</a> <GitHubStars repo="lifuguan/GGRt_official" href="https://github.com/lifuguan/GGRt_official" />.</>,
       <>One paper was accepted to IEEE TGRS: <a href="https://doi.org/10.1109/TGRS.2024.3373442">SPGC</a>.</>,
     ],
   },
@@ -60,6 +60,7 @@ const publicationGroups = [
         authors: <>Haosong Peng, Hao Li, Jiaqi Chen, Yuhao Pan, Runmao Yao, <strong>Yalun Dai</strong>, Fushuo Huo, Fangzhou Hong, Zhaoxi Chen, Haozhao Wang, Dingwen Zhang, Ziwei Liu, Wenchao Xu</>,
         venue: "arXiv, 2026",
         links: [["Paper", "https://arxiv.org/abs/2605.27367"]],
+        stars: { repo: "Ropedia/SpatialBench", href: "https://github.com/Ropedia/SpatialBench" },
       },
       {
         title: "OmniVGGT: Omni-Modality Driven Visual Geometry Grounded Transformer",
@@ -104,12 +105,14 @@ const publicationGroups = [
         authors: <>Lingao Xiao*, <strong>Yalun Dai</strong>*, Yangyu Huang*, Qihao Zhao, Wenshan Wu, Hugo He, Ruishuo Chen, Jin Jiang, Qianli Ma, Jiahuan Zhang, Xin Zhang, Ying Xin, Yang Ou, Yan Xia, Scarlett Li, Longbo Huang, Zhipeng Zhang, Yang He, Kim-Hui Yap, Yan Lu</>,
         venue: "arXiv, 2026",
         links: [["Paper", "https://arxiv.org/abs/2607.04438"]],
+        stars: { repo: "microsoft/ResearchStudio", href: "https://github.com/microsoft/ResearchStudio" },
       },
       {
         title: "ResearchStudio-Idea: An Evidence-Grounded Research-Ideation Skill Suite from ML Conference Outcomes",
         authors: <>Qihao Zhao, Yangyu Huang, <strong>Yalun Dai</strong>, Lingao Xiao, Jianjun Gao, Xin Zhang, Wenshan Wu, Scarlett Li, Yang He, Yan Lu, Kim-Hui Yap</>,
         venue: "arXiv, 2026",
         links: [["Paper", "https://arxiv.org/abs/2607.04439"]],
+        stars: { repo: "microsoft/ResearchStudio", href: "https://github.com/microsoft/ResearchStudio" },
       },
       {
         title: "Demystifying Data Organization for Enhanced LLM Training",
