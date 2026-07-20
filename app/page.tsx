@@ -1,12 +1,20 @@
 "use client";
 
-import { useState } from "react";
+import { Fragment, useState } from "react";
+
+function GitHubStars({ repo, href }: { repo: string; href: string }) {
+  return (
+    <a className="star-badge" href={href} target="_blank" rel="noreferrer" aria-label={`View ${repo} on GitHub`}>
+      <img src={`https://img.shields.io/github/stars/${repo}?style=social`} alt={`${repo} GitHub stars`} loading="lazy" />
+    </a>
+  );
+}
 
 const news = [
   {
     year: "2026",
     items: [
-      <><a href="https://arxiv.org/abs/2607.04438">ResearchStudio-Reel</a> and <a href="https://arxiv.org/abs/2607.04439">ResearchStudio-Idea</a> released.</>,
+      <><a href="https://arxiv.org/abs/2607.04438">ResearchStudio-Reel</a> and <a href="https://arxiv.org/abs/2607.04439">ResearchStudio-Idea</a> <GitHubStars repo="microsoft/ResearchStudio" href="https://github.com/microsoft/ResearchStudio" /> released.</>,
       <><a href="https://arxiv.org/abs/2606.20515">S-Agent</a> and <a href="https://arxiv.org/abs/2605.27367">SpatialBench</a> released.</>,
       <>One paper was accepted to <strong>ACL 2026</strong> Main Conference: <a href="https://aclanthology.org/2026.acl-long.1262/">Data Organization</a>.</>,
       <>One paper was accepted to <strong>CVPR 2026</strong>: <a href="https://arxiv.org/abs/2511.10560">OmniVGGT</a> (<strong className="award">Highlight</strong>).</>,
@@ -58,6 +66,7 @@ const publicationGroups = [
         authors: <>Haosong Peng, Hao Li, <strong>Yalun Dai</strong>, Yushi Lan, Yihang Luo, Tianyu Qi, Zhengshen Zhang, Yufeng Zhan, Junfei Zhang, Wenchao Xu, Ziwei Liu</>,
         venue: <><strong>CVPR 2026</strong>, <strong className="award">Highlight</strong></>,
         links: [["Paper", "https://arxiv.org/abs/2511.10560"]],
+        stars: { repo: "Livioni/OmniVGGT-official", href: "https://github.com/Livioni/OmniVGGT-official" },
       },
       {
         title: "From Spatial to Actions: Grounding Vision-Language-Action Model in Spatial Foundation Priors",
@@ -70,12 +79,14 @@ const publicationGroups = [
         authors: <>Yuanyuan Gao*, <strong>Yalun Dai</strong>*, Hao Li*, Weicai Ye, Jiaqi Chen, Dingwen Zhang, Tong He, Guofeng Zhang, Junwei Han</>,
         venue: "International Journal of Computer Vision, 2026",
         links: [["Paper", "https://arxiv.org/abs/2412.17612"]],
+        type: "journal",
       },
       {
         title: "GGRt: Towards Pose-free Generalizable 3D Gaussian Splatting in Real-time",
         authors: <>Hao Li, Yuanyuan Gao, Chenming Wu, Dingwen Zhang, <strong>Yalun Dai</strong>, Chen Zhao, Haocheng Feng, Errui Ding, Jingdong Wang, Junwei Han</>,
         venue: <strong>ECCV 2024</strong>,
         links: [["Paper", "https://arxiv.org/abs/2403.10147"]],
+        stars: { repo: "lifuguan/GGRt_official", href: "https://github.com/lifuguan/GGRt_official" },
       },
       {
         title: "GP-NeRF: Generalized Perception NeRF for Context-Aware 3D Scene Understanding",
@@ -160,7 +171,7 @@ const publicationOrder = [
 
 const publicationRank = new Map(publicationOrder.map((title, index) => [title, index]));
 const papers = publicationGroups
-  .flatMap((group) => group.papers.map((paper) => ({ ...paper, category: group.title })))
+  .flatMap((group) => group.papers.map((paper) => ({ ...paper, category: group.title, type: paper.type ?? "conference" })))
   .sort((a, b) => (publicationRank.get(a.title) ?? 999) - (publicationRank.get(b.title) ?? 999));
 
 const publicationFilters = ["All", "Data-Centric AI", "Embodied AI"];
@@ -168,6 +179,10 @@ const publicationFilters = ["All", "Data-Centric AI", "Embodied AI"];
 export default function Home() {
   const [activeFilter, setActiveFilter] = useState("All");
   const visiblePapers = activeFilter === "All" ? papers : papers.filter((paper) => paper.category === activeFilter);
+  const publicationSections = [
+    { title: "Conference", papers: visiblePapers.filter((paper) => paper.type !== "journal") },
+    { title: "Journal", papers: visiblePapers.filter((paper) => paper.type === "journal") },
+  ].filter((section) => section.papers.length > 0);
 
   return (
     <div className="site-container">
@@ -218,17 +233,25 @@ export default function Home() {
             ))}
           </div>
           <div className="publication-list">
-            {visiblePapers.map((paper) => (
-              <article className="publication" key={paper.title}>
-                <div className="publication-details">
-                  <h4>{paper.title}</h4>
-                  <p className="authors">{paper.authors}</p>
-                  <p className="publication-meta">
-                    <span className="venue">{paper.venue}</span>
-                    <span className="paper-links">{paper.links.map(([label, href]) => <a key={`${paper.title}-${label}`} href={href} target="_blank" rel="noreferrer">[{label}]</a>)}</span>
-                  </p>
-                </div>
-              </article>
+            {publicationSections.map((section) => (
+              <Fragment key={section.title}>
+                <div className="publication-type-heading"><span>{section.title}</span></div>
+                {section.papers.map((paper) => (
+                  <article className="publication" key={paper.title}>
+                    <div className="publication-details">
+                      <h4>{paper.title}</h4>
+                      <p className="authors">{paper.authors}</p>
+                      <p className="publication-meta">
+                        <span className="venue">{paper.venue}</span>
+                        <span className="paper-links">
+                          {paper.links.map(([label, href]) => <a key={`${paper.title}-${label}`} href={href} target="_blank" rel="noreferrer">[{label}]</a>)}
+                          {paper.stars && <GitHubStars repo={paper.stars.repo} href={paper.stars.href} />}
+                        </span>
+                      </p>
+                    </div>
+                  </article>
+                ))}
+              </Fragment>
             ))}
           </div>
         </section>
