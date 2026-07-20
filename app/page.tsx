@@ -208,7 +208,10 @@ export default function Home() {
       <main id="top">
         <section className="page-section about-section" id="about">
           <div className="about-grid">
-            <img className="profile-photo" src="/profile.jpeg" alt="Yalun Dai" />
+            <figure className="profile-figure">
+              <img className="profile-photo" src="/profile.jpeg" alt="Yalun Dai at Mount Rainier" />
+              <figcaption>Mount Rainier · Seattle, Washington</figcaption>
+            </figure>
             <div className="about-copy">
               <h1>Yalun Dai</h1>
               <p>
@@ -218,7 +221,7 @@ export default function Home() {
                 I interned at <strong>Microsoft Research and ByteDance</strong> and SenseTime.
               </p>
               <div className="bio-links">
-                <span>Email: yalun001 [at] e.ntu.edu.sg</span>
+                <a href="mailto:yalun001@e.ntu.edu.sg">Email: yalun001 [at] e.ntu.edu.sg</a>
                 <a href="https://scholar.google.com/citations?user=6XyNVowAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
               </div>
             </div>
