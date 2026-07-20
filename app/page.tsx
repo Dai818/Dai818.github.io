@@ -218,7 +218,7 @@ export default function Home() {
                 I am a second-year PhD student at Nanyang Technological University (NTU Research Scholarship), supervised by <a href="https://www.ntu.edu.sg/research/faculty-directory/detail/Yap-Kim-Hui" target="_blank" rel="noreferrer">Prof. Kim-Hui Yap</a>.
                 I also collaborate on several research works with <a href="https://liuziwei7.github.io/" target="_blank" rel="noreferrer">Prof. Ziwei Liu</a>.
                 My research focuses on <strong>Data-centric AI</strong> and <strong>Embodied AI</strong>.
-                I interned at <strong>Microsoft Research and ByteDance</strong> and SenseTime.
+                I interned at <strong>Microsoft Research</strong>, <strong>ByteDance</strong>, and <strong>SenseTime</strong>.
               </p>
               <div className="bio-links">
                 <a href="mailto:yalun001@e.ntu.edu.sg">Email: yalun001 [at] e.ntu.edu.sg</a>
