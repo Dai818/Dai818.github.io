@@ -17,5 +17,13 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><head><link rel="stylesheet" href="/site.css" /></head><body>{children}</body></html>;
+  return (
+    <html lang="en">
+      <head>
+        <link rel="stylesheet" href="/site.css" />
+        <script data-goatcounter="https://yalun.goatcounter.com/count" async src="https://gc.zgo.at/count.js" />
+      </head>
+      <body>{children}</body>
+    </html>
+  );
 }
