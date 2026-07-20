@@ -83,6 +83,13 @@ const publicationGroups = [
         type: "journal",
       },
       {
+        title: "Radiant: Large-scale 3D Gaussian Rendering based on Hierarchical Framework",
+        authors: <>Haosong Peng, Tianyu Qi, Yufeng Zhan, Hao Li, <strong>Yalun Dai</strong>, Yuanqing Xia</>,
+        venue: "IEEE Transactions on Services Computing, 2026",
+        links: [["Paper", "https://arxiv.org/abs/2412.05546"]],
+        type: "journal",
+      },
+      {
         title: "GGRt: Towards Pose-free Generalizable 3D Gaussian Splatting in Real-time",
         authors: <>Hao Li, Yuanyuan Gao, Chenming Wu, Dingwen Zhang, <strong>Yalun Dai</strong>, Chen Zhao, Haocheng Feng, Errui Ding, Jingdong Wang, Junwei Han</>,
         venue: <strong>ECCV 2024</strong>,
@@ -150,6 +157,13 @@ const publicationGroups = [
         venue: <strong>CVPR 2023</strong>,
         links: [["Paper", "https://arxiv.org/abs/2302.01171"]],
       },
+      {
+        title: "SPGC: Shape-Prior-Based Generated Content Data Augmentation for Remote Sensing Object Detection",
+        authors: <><strong>Yalun Dai</strong>, Fei Ma, Wei Hu, Fan Zhang</>,
+        venue: "IEEE Transactions on Geoscience and Remote Sensing, 2024",
+        links: [["Paper", "https://doi.org/10.1109/TGRS.2024.3373442"]],
+        type: "journal",
+      },
     ],
   },
 ];
@@ -158,7 +172,6 @@ const publicationOrder = [
   "S-Agent: Spatial Tool-Use Elicits Reasoning for Spatial Intelligence",
   "Demystifying Data Organization for Enhanced LLM Training",
   "ResearchStudio-Reel: Automate the Last Mile of Research from Paper to Poster, Video, and Blog",
-  "CoSurfGS: Collaborative 3D Surface Gaussian Splatting with Distributed Learning for Large Scene Reconstruction",
   "ResearchStudio-Idea: An Evidence-Grounded Research-Ideation Skill Suite from ML Conference Outcomes",
   "SpatialBench: Is Your Spatial Foundation Model an All-Round Player?",
   "OmniVGGT: Omni-Modality Driven Visual Geometry Grounded Transformer",
@@ -170,6 +183,9 @@ const publicationOrder = [
   "GGRt: Towards Pose-free Generalizable 3D Gaussian Splatting in Real-time",
   "GP-NeRF: Generalized Perception NeRF for Context-Aware 3D Scene Understanding",
   "Boosting Low-Data Instance Segmentation by Unsupervised Pre-training with Saliency Prompt",
+  "CoSurfGS: Collaborative 3D Surface Gaussian Splatting with Distributed Learning for Large Scene Reconstruction",
+  "Radiant: Large-scale 3D Gaussian Rendering based on Hierarchical Framework",
+  "SPGC: Shape-Prior-Based Generated Content Data Augmentation for Remote Sensing Object Detection",
 ];
 
 const publicationRank = new Map(publicationOrder.map((title, index) => [title, index]));
@@ -192,15 +208,19 @@ export default function Home() {
       <main id="top">
         <section className="page-section about-section" id="about">
           <div className="about-grid">
-            <div className="photo-placeholder" role="img" aria-label="Portrait placeholder"><span>Photo</span></div>
+            <img className="profile-photo" src="/profile.jpeg" alt="Yalun Dai" />
             <div className="about-copy">
               <h1>Yalun Dai</h1>
               <p>
                 I am a second-year PhD student at Nanyang Technological University (NTU Research Scholarship), supervised by <a href="https://www.ntu.edu.sg/research/faculty-directory/detail/Yap-Kim-Hui" target="_blank" rel="noreferrer">Prof. Kim-Hui Yap</a>.
-                I also collaborate on several research projects with <a href="https://liuziwei7.github.io/" target="_blank" rel="noreferrer">Prof. Ziwei Liu</a>.
+                I also collaborate on several research works with <a href="https://liuziwei7.github.io/" target="_blank" rel="noreferrer">Prof. Ziwei Liu</a>.
                 My research focuses on <strong>Data-centric AI</strong> and <strong>Embodied AI</strong>.
-                Previously, I interned at <strong>ByteDance</strong> and <strong>Microsoft Research</strong>.
+                I interned at <strong>Microsoft Research and ByteDance</strong> and SenseTime.
               </p>
+              <div className="bio-links">
+                <span>Email: yalun001 [at] e.ntu.edu.sg</span>
+                <a href="https://scholar.google.com/citations?user=6XyNVowAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
+              </div>
             </div>
           </div>
         </section>
