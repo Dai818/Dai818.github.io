@@ -57,20 +57,20 @@ const publicationGroups = [
       },
       {
         title: "World-to-Wrist: Task-Conditioned Future Wrist Modeling for Fine-Grained Robot Manipulation",
-        authors: <>Yuhao Pan, Haosong Peng, Zhengshen Zhang, Zhengyang Yan, <strong>Yalun Dai</strong>, Fushuo Huo, Chujie Wang, Tianyu Qi, Xiucheng Wang, Nan Cheng, Wenchao Xu</>,
+        authors: <>Yuhao Pan, Haosong Peng, Zhengshen Zhang, Zhengyang Yan, <strong>Yalun Dai</strong>, Fushuo Huo, Chujie Wang, Tianyu Qi, Xiucheng Wang, Nan Cheng, Wenchao&nbsp;Xu</>,
         venue: "arXiv, 2026",
         links: [["Paper", "https://arxiv.org/abs/2608.05369"]],
       },
       {
         title: "SpatialBench: Is Your Spatial Foundation Model an All-Round Player?",
-        authors: <>Haosong Peng, Hao Li, Jiaqi Chen, Yuhao Pan, Runmao Yao, <strong>Yalun Dai</strong>, Fushuo Huo, Fangzhou Hong, Zhaoxi Chen, Haozhao Wang, Dingwen Zhang, Ziwei Liu, Wenchao Xu</>,
+        authors: <>Haosong Peng, Hao Li, Jiaqi Chen, Yuhao Pan, Runmao Yao, <strong>Yalun Dai</strong>, Fushuo Huo, Fangzhou Hong, Zhaoxi Chen, Haozhao Wang, Dingwen Zhang, Ziwei Liu, Wenchao&nbsp;Xu</>,
         venue: "arXiv, 2026",
         links: [["Paper", "https://arxiv.org/abs/2605.27367"]],
         stars: { repo: "Ropedia/SpatialBench", href: "https://github.com/Ropedia/SpatialBench" },
       },
       {
         title: "OmniVGGT: Omni-Modality Driven Visual Geometry Grounded Transformer",
-        authors: <>Haosong Peng, Hao Li, <strong>Yalun Dai</strong>, Yushi Lan, Yihang Luo, Tianyu Qi, Zhengshen Zhang, Yufeng Zhan, Junfei Zhang, Wenchao Xu, Ziwei Liu</>,
+        authors: <>Haosong Peng, Hao Li, <strong>Yalun Dai</strong>, Yushi Lan, Yihang Luo, Tianyu Qi, Zhengshen Zhang, Yufeng Zhan, Junfei Zhang, Wenchao&nbsp;Xu, Ziwei Liu</>,
         venue: <><strong>CVPR 2026</strong>, <strong className="award">Highlight</strong></>,
         links: [["Paper", "https://arxiv.org/abs/2511.10560"]],
         stars: { repo: "Livioni/OmniVGGT-official", href: "https://github.com/Livioni/OmniVGGT-official" },
