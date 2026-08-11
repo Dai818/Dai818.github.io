@@ -56,6 +56,12 @@ const publicationGroups = [
         links: [["Project", "https://ropedia.github.io/S-Agent/"], ["Paper", "https://arxiv.org/abs/2606.20515"]],
       },
       {
+        title: "World-to-Wrist: Task-Conditioned Future Wrist Modeling for Fine-Grained Robot Manipulation",
+        authors: <>Yuhao Pan, Haosong Peng, Zhengshen Zhang, Zhengyang Yan, <strong>Yalun Dai</strong>, Fushuo Huo, Chujie Wang, Tianyu Qi, Xiucheng Wang, Nan Cheng, Wenchao Xu</>,
+        venue: "arXiv, 2026",
+        links: [["Paper", "https://arxiv.org/abs/2608.05369"]],
+      },
+      {
         title: "SpatialBench: Is Your Spatial Foundation Model an All-Round Player?",
         authors: <>Haosong Peng, Hao Li, Jiaqi Chen, Yuhao Pan, Runmao Yao, <strong>Yalun Dai</strong>, Fushuo Huo, Fangzhou Hong, Zhaoxi Chen, Haozhao Wang, Dingwen Zhang, Ziwei Liu, Wenchao Xu</>,
         venue: "arXiv, 2026",
@@ -173,6 +179,7 @@ const publicationOrder = [
   "Demystifying Data Organization for Enhanced LLM Training",
   "ResearchStudio-Reel: Automate the Last Mile of Research from Paper to Poster, Video, and Blog",
   "ResearchStudio-Idea: An Evidence-Grounded Research-Ideation Skill Suite from ML Conference Outcomes",
+  "World-to-Wrist: Task-Conditioned Future Wrist Modeling for Fine-Grained Robot Manipulation",
   "SpatialBench: Is Your Spatial Foundation Model an All-Round Player?",
   "OmniVGGT: Omni-Modality Driven Visual Geometry Grounded Transformer",
   "From Spatial to Actions: Grounding Vision-Language-Action Model in Spatial Foundation Priors",
